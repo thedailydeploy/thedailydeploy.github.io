@@ -1,7 +1,7 @@
 /* The Daily Deploy — Sources. Brand is deliberately dark-only: black, cream, neon-lime. */
 :root{
-  --ink:#0b0b0a; --panel:#161614; --paper:#f1ead8; --paper-ink:#151513;
-  --lime:#c8ff2e; --muted:#9a968a; --line:#2c2b27; --rule:#b9b19c;
+  --ink:#0b0b0b; --panel:#1d1c19; --bar:#121211; --paper:#f1ead8; --paper-ink:#151513;
+  --lime:#c8ff2e; --muted:#aca796; --line:#3e3c35; --rule:#b9b19c;
   --f-display:"Archivo Black","Arial Black",Impact,sans-serif;
   --f-marker:"Permanent Marker","Comic Sans MS",cursive;
   --f-body:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
@@ -22,15 +22,13 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 
 /* masthead */
 .mast{padding-block:28px 18px;display:flex;gap:14px;align-items:center;text-decoration:none}
-.mark{flex:none;width:56px;height:56px;border-radius:50%;background:#000;border:1px solid var(--line);display:grid;place-items:center;position:relative}
-.mark b{font-family:var(--f-display);color:var(--paper);font-size:21px;letter-spacing:-1px;line-height:1}
-.mark i{position:absolute;bottom:15px;left:16px;right:16px;height:3px;background:var(--lime);border-radius:2px}
+.mark{flex:none;width:64px;height:auto;display:block}
 .mast h1{margin:0;font-family:var(--f-display);font-size:clamp(20px,5vw,30px);line-height:1;letter-spacing:-.5px}
 .mast h1 small{font-family:var(--f-marker);font-size:.52em;color:var(--lime);letter-spacing:0;margin-left:6px}
 .mast p{margin:5px 0 0;color:var(--muted);font-size:14px;max-width:52ch}
 
 /* sticky bar */
-.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--ink);border-bottom:1px solid var(--line)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bar);border-bottom:1px solid var(--line)}
 .bar .wrap{padding-block:10px;display:flex;flex-direction:column;gap:10px}
 .search{position:relative}
 #q{width:100%;background:var(--panel);border:1px solid var(--line);color:var(--paper);font:inherit;padding:10px 12px;border-radius:6px}
@@ -44,9 +42,11 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .results .none{padding:12px;color:var(--muted);font-size:14px}
 .dates{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
 .dates::-webkit-scrollbar{display:none}
-.chip{flex:none;font-family:var(--f-mono);font-size:12px;text-transform:uppercase;letter-spacing:.06em;padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--paper);text-decoration:none;white-space:nowrap}
+.chip{flex:none;font-family:var(--f-mono);font-size:12px;text-transform:uppercase;letter-spacing:.06em;padding:6px 11px;border:1px solid var(--line);border-radius:999px;background:var(--panel);color:var(--paper);text-decoration:none;white-space:nowrap}
 .chip.on{background:var(--lime);color:var(--ink);border-color:var(--lime);font-weight:500}
-.chip.arch{border-color:var(--lime);color:var(--lime)}
+.chip.arch{border-color:var(--lime);color:var(--lime);background:transparent}
+.chip:hover{border-color:var(--muted)}
+.chip.on:hover{border-color:var(--lime)}
 
 /* days and stories */
 main{padding-block:22px 48px}
@@ -86,7 +86,7 @@ main{padding-block:22px 48px}
 .year{margin-bottom:28px}
 .year h2{margin:0 0 10px;font-family:var(--f-display);font-size:20px;border-bottom:2px solid var(--paper);padding-bottom:6px}
 .months{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px}
-.mon{display:block;border:1px solid var(--line);border-radius:8px;padding:12px;text-decoration:none}
+.mon{display:block;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px;text-decoration:none}
 .mon:hover{border-color:var(--lime)}
 .mon b{display:block;font-weight:600}
 .mon span{font-family:var(--f-mono);font-size:11px;color:var(--muted);letter-spacing:.05em;text-transform:uppercase}
@@ -103,3 +103,6 @@ footer{border-top:1px solid var(--line);padding-block:20px 32px;color:var(--mute
 footer b{color:var(--paper);font-weight:500}
 footer a{color:var(--lime)}
 @media (prefers-reduced-motion:no-preference){.story{transition:transform .15s}.story:hover{transform:translateY(-2px)}}
+
+.mon:hover,.daylist a:hover,.results a:hover{background:#26251f}
+#q:focus{border-color:var(--muted)}

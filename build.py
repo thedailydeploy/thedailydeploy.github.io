@@ -89,14 +89,17 @@ def page(title, desc, path, body, search=True, chips=None):
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{canon}">
-<meta name="theme-color" content="#0b0b0a">
+<meta name="theme-color" content="#0b0b0b">
+<meta property="og:image" content="{SITE}/assets/og-image.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Permanent+Marker&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-<div class="wrap"><a class="mast" href="/"><div class="mark" aria-hidden="true"><b>DD</b><i></i></div><div><h1>THE DAILY DEPLOY <small>by SAJ</small></h1><p>Every source behind every post, sorted by day and story.</p></div></a></div>
+<div class="wrap"><a class="mast" href="/"><img class="mark" src="/assets/logo.png" width="64" height="55" alt="The Daily Deploy logo"><div><h1>THE DAILY DEPLOY <small>by SAJ</small></h1><p>Every source behind every post, sorted by day and story.</p></div></a></div>
 {bar}
 <main class="wrap">
 {body}
@@ -104,6 +107,13 @@ def page(title, desc, path, body, search=True, chips=None):
 <div class="wrap"><footer><span>Sources are added each morning when the day's carousel goes live at <b>8:30 AM IST</b>.</span><span><a href="/">Latest</a> · <a href="/archive/">Archive</a> · <a href="https://www.instagram.com/dailydeploybysaj/">@dailydeploybysaj</a></span></footer></div>
 <script>
 (function(){{var t=new Date(Date.now()+19800000).toISOString().slice(0,10);document.querySelectorAll("[data-date='"+t+"'] .dayhead h2").forEach(function(h){{var s=document.createElement("span");s.className="today";s.textContent="today";h.appendChild(s)}});document.querySelectorAll(".chip[data-d='"+t+"']").forEach(function(c){{c.textContent="Today"}})}})();
+(function(){{var chips=[].slice.call(document.querySelectorAll('.chip[href^="#d-"]'));if(!chips.length)return;
+function mark(d){{chips.forEach(function(c){{var on=c.getAttribute("data-d")===d;c.classList.toggle("on",on);if(on)c.setAttribute("aria-current","true");else c.removeAttribute("aria-current")}})}}
+function fromHash(){{var h=location.hash.slice(3);mark(h&&document.getElementById("d-"+h)?h:chips[0].getAttribute("data-d"))}}
+chips.forEach(function(c){{c.addEventListener("click",function(){{mark(c.getAttribute("data-d"))}})}});
+addEventListener("hashchange",fromHash);fromHash();
+var lock=0;chips.forEach(function(c){{c.addEventListener("click",function(){{lock=Date.now()}})}});
+if("IntersectionObserver"in window){{var io=new IntersectionObserver(function(es){{if(Date.now()-lock<900)return;es.forEach(function(x){{if(x.isIntersecting)mark(x.target.getAttribute("data-date"))}})}},{{rootMargin:"-45% 0px -50% 0px"}});document.querySelectorAll(".day[data-date]").forEach(function(d){{io.observe(d)}})}}}})();
 </script>
 {'<script src="/assets/search.js" defer></script>' if search else ''}
 </body>
@@ -131,7 +141,7 @@ def render_day(day, link_heading=True):
 
 
 def chips_html(recent, current=None):
-    c = "".join(f'<a class="chip{" on" if d["date"] == current else ""}" data-d="{d["date"]}" href="{dpath(d["date"])}">{short_date(d["date"])}</a>' for d in recent)
+    c = "".join(f'<a class="chip{" on" if d["date"] == current else ""}"{" aria-current=\"page\"" if d["date"] == current else ""} data-d="{d["date"]}" href="{dpath(d["date"])}">{short_date(d["date"])}</a>' for d in recent)
     return c + '<a class="chip arch" href="/archive/">Archive</a>'
 
 
