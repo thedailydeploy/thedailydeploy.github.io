@@ -106,3 +106,4 @@ footer a{color:var(--lime)}
 
 .mon:hover,.daylist a:hover,.results a:hover{background:#26251f}
 #q:focus{border-color:var(--muted)}
+.dayhead .today{font-family:var(--f-marker);color:var(--ink);letter-spacing:0;text-transform:none;font-size:14px}
