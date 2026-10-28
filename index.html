@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Every source behind every post from The Daily Deploy by SAJ, sorted by day and story.">
+<meta property="og:title" content="The Daily Deploy — Sources">
+<meta property="og:description" content="Every source behind every post, sorted by day and story.">
+<style>html{-webkit-text-size-adjust:100%}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Daily Deploy Sources</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Permanent+Marker&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: brand masthead, sticky date strip, then one dated "edition" per day; each story is a torn-paper panel with its source links. Brand is deliberately dark-only (black + neon-lime). */
+:root{
+  --ink:#0b0b0a; --panel:#161614; --paper:#f1ead8; --paper-ink:#151513;
+  --lime:#c8ff2e; --muted:#9a968a; --line:#2c2b27;
+  --f-display:"Archivo Black","Arial Black",Impact,sans-serif;
+  --f-marker:"Permanent Marker","Comic Sans MS",cursive;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+html,body{background:var(--ink);color:var(--paper)}
+body{font-family:var(--f-body);font-size:15px;line-height:1.5}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--ink)}
+.wrap{max-width:760px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* masthead */
+.mast{padding-block:32px 20px;display:flex;gap:16px;align-items:center}
+.mark{flex:none;width:64px;height:64px;border-radius:50%;background:#000;border:1px solid var(--line);display:grid;place-items:center;position:relative}
+.mark b{font-family:var(--f-display);color:var(--paper);font-size:24px;letter-spacing:-1px;line-height:1}
+.mark i{position:absolute;bottom:17px;left:18px;right:18px;height:3px;background:var(--lime);border-radius:2px}
+.mast h1{margin:0;font-family:var(--f-display);font-size:clamp(22px,5.4vw,34px);line-height:1;letter-spacing:-.5px;text-wrap:balance}
+.mast h1 small{font-family:var(--f-marker);font-size:.5em;color:var(--lime);letter-spacing:0;margin-left:6px}
+.mast p{margin:6px 0 0;color:var(--muted);font-size:14px;max-width:52ch}
+
+/* controls */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--ink);border-bottom:1px solid var(--line)}
+.bar .wrap{padding-block:10px;display:flex;flex-direction:column;gap:10px}
+#q{width:100%;box-sizing:border-box;background:var(--panel);border:1px solid var(--line);color:var(--paper);font:inherit;padding:10px 12px;border-radius:6px}
+#q::placeholder{color:var(--muted)}
+#q:focus-visible{outline:2px solid var(--lime);outline-offset:1px}
+.dates{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.dates::-webkit-scrollbar{display:none}
+.chip{flex:none;font-family:var(--f-mono);font-size:12px;text-transform:uppercase;letter-spacing:.06em;padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--paper);text-decoration:none;white-space:nowrap}
+.chip[aria-current="true"]{background:var(--lime);color:var(--ink);border-color:var(--lime);font-weight:500}
+.chip:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+
+/* editions */
+main{padding-block:24px 64px}
+.day{display:flex;flex-direction:column;gap:18px;padding-block:8px 32px;scroll-margin-top:120px}
+.dayhead{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:2px solid var(--paper);padding-bottom:8px}
+.dayhead h2{margin:0;font-family:var(--f-display);font-size:clamp(20px,4.6vw,28px);letter-spacing:-.3px;text-transform:uppercase}
+.dayhead span{font-family:var(--f-mono);font-size:12px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.today{font-family:var(--f-marker);color:var(--ink);background:var(--lime);padding:1px 8px;font-size:14px;transform:rotate(-2deg);display:inline-block;margin-left:8px;vertical-align:middle}
+
+.story{position:relative;background:var(--paper);color:var(--paper-ink);padding:22px 18px 18px;
+  clip-path:polygon(0 6px,4% 0,11% 5px,19% 1px,28% 6px,37% 0,46% 4px,55% 0,64% 5px,73% 1px,82% 6px,91% 0,100% 5px,100% calc(100% - 4px),93% 100%,84% calc(100% - 5px),75% 100%,66% calc(100% - 4px),57% 100%,48% calc(100% - 6px),39% 100%,30% calc(100% - 3px),21% 100%,12% calc(100% - 5px),3% 100%,0 calc(100% - 3px))}
+.top{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
+.num{font-family:var(--f-mono);font-size:12px;font-weight:500;letter-spacing:.06em}
+.cat{font-family:var(--f-marker);font-size:13px;background:var(--ink);color:var(--lime);padding:2px 9px;transform:rotate(-1.5deg)}
+.story h3{margin:0 0 6px;font-family:var(--f-display);font-size:clamp(17px,4vw,21px);line-height:1.15;text-wrap:balance}
+.india{margin:0 0 12px;font-size:14px;max-width:62ch}
+.india b{font-weight:600}
+.srcs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;border-top:1px dashed #b9b19c}
+.srcs li{border-bottom:1px dashed #b9b19c}
+.srcs a{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;align-items:baseline;padding:10px 2px;color:var(--paper-ink);text-decoration:none}
+.srcs a:hover .t,.srcs a:focus-visible .t{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+.srcs a:focus-visible{outline:2px solid var(--paper-ink);outline-offset:2px}
+.o{font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.07em;grid-column:1/-1}
+.t{font-weight:500;min-width:0;overflow-wrap:anywhere}
+.arr{font-family:var(--f-mono);font-size:13px}
+
+/* empty + no results */
+.empty{border:1px dashed var(--line);border-radius:8px;padding:28px 20px;display:flex;flex-direction:column;gap:8px}
+.empty h2{margin:0;font-family:var(--f-display);font-size:20px;text-transform:uppercase}
+.empty p{margin:0;color:var(--muted);max-width:52ch}
+.empty .note{font-family:var(--f-marker);color:var(--lime);font-size:16px;transform:rotate(-1deg);align-self:flex-start}
+footer{border-top:1px solid var(--line);padding-block:20px 32px;color:var(--muted);font-size:13px}
+footer b{color:var(--paper);font-weight:500}
+@media (prefers-reduced-motion:no-preference){.story{transition:transform .15s}.story:hover{transform:translateY(-2px)}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="mast">
+    <div class="mark" aria-hidden="true"><b>DD</b><i></i></div>
+    <div>
+      <h1>THE DAILY DEPLOY <small>by SAJ</small></h1>
+      <p>Every source behind every post, sorted by day and story. Tap a link to read the original reporting.</p>
+    </div>
+  </header>
+</div>
+
+<div class="bar">
+  <div class="wrap">
+    <input id="q" type="search" placeholder="Search a story, outlet or topic" aria-label="Search sources">
+    <nav class="dates" id="dates" aria-label="Jump to date"></nav>
+  </div>
+</div>
+
+<main class="wrap" id="main"></main>
+
+<div class="wrap"><footer>Sources are added each morning when the day's carousel goes live at <b>8:30 AM IST</b>. Newest day first.</footer></div>
+
+<script>
+/* ===== SOURCE DATA — newest day first =====
+   { date:"YYYY-MM-DD", stories:[ { title, category, india, sources:[ {outlet, title, url} ] } ] } */
+const DAYS = [
+ {date:"2026-10-28", stories:[
+  {title:"Cyclone Arnab makes landfall", category:"Climate",
+   india:"Over 84,000 people are in Andhra relief shelters, and crop losses are still being counted.",
+   sources:[
+    {outlet:"UNI", title:"IMD update on Cyclone Arnab's landfall", url:"https://uniindia.com/south-india/weather-tn-cyclone-28ms8/227879"},
+    {outlet:"The Hans India", title:"Arnab completes landfall, no loss of life reported", url:"https://www.thehansindia.com/andhra-pradesh/the-worst-is-over-arnab-completes-landfall-no-loss-of-life-or-major-damage-reported-1136701"},
+    {outlet:"The Pioneer", title:"Live: winds ease as Arnab crosses the Yanam coast", url:"https://dailypioneer.com/india/cyclone-arnab-live-landfall-wind-eases-yanam-andhra-coast-october-28"}]},
+  {title:"Netanyahu leads Israel's vote count", category:"Politics",
+   india:"A hung Knesset could mean weeks of talks or another election in a region that supplies much of India's oil.",
+   sources:[
+    {outlet:"Times of Israel", title:"With 42% counted, PM's bloc leads 57–47", url:"https://www.timesofisrael.com/liveblog_entry/with-nearly-42-of-ballots-counted-pms-bloc-leads-opposition-57-47-arab-parties-hold-remaining-seats/"},
+    {outlet:"Jerusalem Post", title:"Israel election 2026: results and exit polls", url:"https://www.jpost.com/israel-election-2026/article-913053"},
+    {outlet:"Times of Israel", title:"Netanyahu claims a decisive majority", url:"https://www.timesofisrael.com/liveblog_entry/netanyahu-right-wing-bloc-won-decisive-majority-claims-iran-weaker-than-ever-israel-stronger-than-ever/"}]},
+  {title:"Iran says a tanker hit mines near Hormuz", category:"Conflict",
+   india:"Brent is near $116. India imports most of its oil, so every scare costs us.",
+   sources:[
+    {outlet:"A News (Anadolu)", title:"Iran says tanker caught fire after hitting a mine", url:"https://www.anews.com.tr/middle-east/2026/10/27/iran-says-oil-tanker-catches-fire-after-hitting-naval-mine-east-of-strait-of-hormuz"},
+    {outlet:"gCaptain", title:"Iran's mine claims, and the missing evidence", url:"https://gcaptain.com/iran-claims-more-tankers-hit-mines-in-hormuz-but-evidence-remains-elusive/"},
+    {outlet:"Kitco", title:"Hormuz uncertainty keeps oil elevated", url:"https://www.kitco.com/news/article/2026-10-27/precious-metals-weaken-hormuz-uncertainty-keeps-oil-elevated-ahead-fed"}]},
+  {title:"Gas exporters close ranks in Moscow", category:"Geopolitics",
+   india:"The countries that sell most of the world's gas are lining up as Gulf supply stays at risk.",
+   sources:[
+    {outlet:"Al Bawaba", title:"Putin and Pezeshkian on energy cooperation", url:"https://www.albawaba.net/news/putin-pezeshkian-call-energy-cooperation-1640045"},
+    {outlet:"TASS", title:"GECF summit in Moscow", url:"https://tass.com/politics/2208623"}]},
+  {title:"Syria shuts its Jordan border", category:"Conflict",
+   india:"A new rift between neighbours as ISIS-claimed violence spills across the border.",
+   sources:[
+    {outlet:"Al Arabiya", title:"Syria closes main crossing with Jordan after air strikes", url:"https://english.alarabiya.net/News/middle-east/2026/10/27/syria-closes-main-border-crossing-with-jordan-after-airstrikes-in-south"},
+    {outlet:"Al Jazeera", title:"Why Jordan struck Syria: what we know", url:"https://www.aljazeera.com/news/2026/10/27/why-jordan-has-struck-syria-what-we-know"}]},
+  {title:"Jio debuts at a 21% premium", category:"Markets",
+   india:"A strong debut shows appetite for mega-listings, even as foreign investors sell Indian shares at a record pace.",
+   sources:[
+    {outlet:"HDFC Sky", title:"Jio Platforms debuts at ₹1,358 vs ₹1,119 issue price", url:"https://hdfcsky.com/news/jio-platforms-shares-debut-at-rs-1358-on-nse-and-bse-against-rs-1119-issue-price"},
+    {outlet:"Sahi", title:"Jio Platforms listing price", url:"https://www.sahi.com/news/jio-platforms-lists-at-1-358-versus-issue-price-of-1-119-per-share"},
+    {outlet:"Angel One", title:"Jio IPO subscribed 22.19 times", url:"https://www.angelone.in/news/ipos/reliance-s-jio-platforms-ipo-set-to-list-tomorrow-on-october-28-2026-after-getting-22-19-times-subscription"},
+    {outlet:"HDFC Sky", title:"27 Oct market close and FPI selling", url:"https://hdfcsky.com/news/stock-market-close-report-today-october-27-2026-sensex-nifty-flatline-as-fed-looms-oil-boils"}]},
+  {title:"OpenAI says its AI cracked big proofs", category:"Tech",
+   india:"If the proofs hold, AI moves from answering questions to producing new science.",
+   sources:[
+    {outlet:"Al Jazeera", title:"AI makes discoveries in maths, CS and physics, OpenAI says", url:"https://www.aljazeera.com/economy/2026/10/27/ai-makes-discoveries-in-mathematics-computer-science-physics-openai-says"},
+    {outlet:"Quartz", title:"OpenAI's claimed discoveries, explained", url:"https://qz.com/openai-ai-discoveries-math-computer-science-physics-102726"}]},
+  {title:"News publishers vs the privacy law", category:"India",
+   india:"Unlike EU or UK rules, India's law has no written carve-out for journalism.",
+   sources:[
+    {outlet:"ThePrint (Reuters)", title:"Media groups tell court the privacy law could shut newsrooms", url:"https://theprint.in/world/indias-privacy-law-could-shut-down-newsrooms-media-groups-tell-court/3082582/"}]},
+  {title:"Netherlands quits Eurovision", category:"Culture",
+   india:"Europe's biggest TV show faces a second year of boycotts over Gaza and Israel.",
+   sources:[
+    {outlet:"Al Jazeera", title:"The Netherlands pulls out of Eurovision 2027", url:"https://www.aljazeera.com/news/2026/10/27/the-netherlands-pulls-out-of-eurovision-2027-due-to-israel-sensitivities"}]}
+ ]},
+ {date:"2026-10-27", stories:[
+  {title:"Arnab is now a severe cyclone", category:"Climate",
+   india:"Red alert for coastal Andhra. Fishers stay ashore till 29 Oct.",
+   sources:[
+    {outlet:"Kalinga TV", title:"Arnab intensifies into a severe cyclonic storm", url:"https://kalingatv.com/odisha/cyclonic-storm-arnab-intensifies-into-severe-cyclonic-storm-imd/"},
+    {outlet:"Asianet Newsable", title:"Arnab likely to intensify before Andhra landfall", url:"https://newsable.asianetnews.com/india/severe-cyclone-arnab-likely-to-intensify-before-andhra-coast-landfall-articleshow-nig33fb"},
+    {outlet:"The Statesman", title:"Cyclone Arnab explained", url:"https://www.thestatesman.com/india/cyclone-arnab-explained-landfall-date-wind-speed-affected-areas-and-safety-measures-1503655324.html"}]},
+  {title:"Israel votes, Netanyahu trails", category:"Politics",
+   india:"The winner shapes Gaza and Iran policy in the region India buys most of its oil from.",
+   sources:[
+    {outlet:"Al Jazeera", title:"Israeli elections: the possible outcomes", url:"https://www.aljazeera.com/news/2026/10/25/israeli-elections-what-are-the-possible-outcomes"},
+    {outlet:"Just Security", title:"Early Edition, 26 October 2026", url:"https://www.justsecurity.org/162014/early-edition-october-26-2026/"}]},
+  {title:"Gulf rivals meet in Tehran, no deal yet", category:"Geopolitics",
+   india:"Pakistan now has a seat at the table that could shape this war.",
+   sources:[
+    {outlet:"Al Jazeera", title:"Mecca defence alliance members in Tehran", url:"https://www.aljazeera.com/news/2026/10/26/mecca-defence-alliance-members-in-tehran-to-defuse-iran-us-yemen-tensions"},
+    {outlet:"Militarnyi", title:"Iran, Saudi Arabia, Turkey and Pakistan talks", url:"https://militarnyi.com/en/blogs/iran-saudi-arabia-turkey-pakistan-talks/"}]},
+  {title:"Houthis claim hits on Saudi oil pumps", category:"Conflict",
+   india:"If the claims hold, the Gulf's main oil detour is under fire.",
+   sources:[
+    {outlet:"Al-Monitor (Reuters)", title:"Houthis say they attacked Saudi pumping stations and Riyadh airport", url:"https://www.al-monitor.com/originals/2026/10/houthis-say-they-attacked-saudi-oil-pumping-stations-riyadh-airport-fighting"}]},
+  {title:"Sensex bounces, rupee slips", category:"Markets",
+   india:"Costly oil and a weaker rupee mean pricier imports.",
+   sources:[
+    {outlet:"HDFC Sky", title:"26 Oct market close: Sensex, Nifty snap four-day slide", url:"https://hdfcsky.com/news/market-close-report-today-october-26-2026-sensex-nifty-rise-as-markets-snap-four-day-losing-streak"}]},
+  {title:"Anthropic files for a Nasdaq listing", category:"Tech",
+   india:"Investors finally see what frontier AI costs, and what it earns.",
+   sources:[
+    {outlet:"TradingKey", title:"Anthropic IPO analysis", url:"https://www.tradingkey.com/analysis/stocks/us-stocks/262239609-anthropic-ipo-ai-us-ant-us-openai-tradingkey"},
+    {outlet:"Bloomberg", title:"Anthropic's S-1 offers first look at its finances", url:"https://www.bloomberg.com/news/articles/2026-10-26/anthropic-ipo-s-1-filing-offers-first-look-at-claude-maker-s-finances"}]},
+  {title:"EC tells SC: SIR orders were unanimous", category:"India",
+   india:"Voter-roll revisions decide who gets to vote.",
+   sources:[
+    {outlet:"LiveLaw", title:"All SIR decisions unanimously taken, ECI tells Supreme Court", url:"https://www.livelaw.in/top-stories/all-sir-decisions-unanimously-taken-form-6-not-amended-eci-tells-supreme-court-556046"},
+    {outlet:"Business Today", title:"EC defends CEC in Supreme Court", url:"https://businesstoday.in/india/story/sir-orders-were-unanimous-form-6-unchanged-ec-defends-cec-gyanesh-kumar-in-supreme-court-563812-2026-10-26"}]}
+ ]}
+];
+/* ======================================== */
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const todayIST = new Date(Date.now() + 5.5*3600e3).toISOString().slice(0,10);
+const fmt = (d, opts) => new Date(d + "T12:00:00Z").toLocaleDateString("en-IN", {timeZone:"UTC", ...opts});
+const days = [...DAYS].sort((a,b) => b.date.localeCompare(a.date));
+
+function render(){
+  const q = $("#q").value.trim().toLowerCase();
+  const main = $("#main");
+  if (!days.length){
+    main.innerHTML = `<section class="empty"><span class="note">First edition loading…</span><h2>No sources yet</h2><p>Each day's stories and their source links appear here after the carousel is posted. Come back after 8:30 AM IST.</p></section>`;
+    $("#dates").innerHTML = ""; return;
+  }
+  const match = (s) => !q || [s.title, s.category, s.india, ...s.sources.flatMap(x => [x.outlet, x.title])].join(" ").toLowerCase().includes(q);
+  const shown = days.map(d => ({...d, stories: d.stories.filter(match)})).filter(d => d.stories.length);
+  $("#dates").innerHTML = shown.map(d => `<a class="chip" href="#d-${d.date}" data-d="${d.date}">${d.date === todayIST ? "Today" : fmt(d.date,{day:"numeric",month:"short"})}</a>`).join("");
+  if (!shown.length){
+    main.innerHTML = `<section class="empty"><h2>No match</h2><p>Nothing found for “${esc(q)}”. Try an outlet name or a single keyword.</p></section>`; return;
+  }
+  main.innerHTML = shown.map(d => `
+    <section class="day" id="d-${d.date}">
+      <div class="dayhead">
+        <h2>${fmt(d.date,{weekday:"long",day:"numeric",month:"long"})}${d.date === todayIST ? '<span class="today">today</span>' : ""}</h2>
+        <span>${d.stories.length} ${d.stories.length === 1 ? "story" : "stories"} · ${d.stories.reduce((n,s)=>n+s.sources.length,0)} sources</span>
+      </div>
+      ${d.stories.map((s,i) => `
+        <article class="story">
+          <div class="top"><span class="num">STORY ${String(i+1).padStart(2,"0")}</span>${s.category ? `<span class="cat">${esc(s.category)}</span>` : ""}</div>
+          <h3>${esc(s.title)}</h3>
+          ${s.india ? `<p class="india"><b>Why it matters:</b> ${esc(s.india)}</p>` : ""}
+          <ul class="srcs">${s.sources.map(x => `
+            <li><a href="${esc(x.url)}" target="_blank" rel="noopener">
+              <span class="o">${esc(x.outlet)}</span><span class="t">${esc(x.title || x.url)}</span><span class="arr">↗</span>
+            </a></li>`).join("")}</ul>
+        </article>`).join("")}
+    </section>`).join("");
+  markCurrent();
+}
+function markCurrent(){
+  const h = location.hash.slice(3);
+  document.querySelectorAll(".chip").forEach((c,i) => c.setAttribute("aria-current", String(h ? c.dataset.d === h : i === 0)));
+}
+$("#q").addEventListener("input", render);
+addEventListener("hashchange", () => { markCurrent(); document.getElementById(location.hash.slice(1))?.scrollIntoView({block:"start"}); });
+render();
+if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView({block:"start"});
+</script>
+
+</body>
+</html>
