@@ -8,8 +8,6 @@
      "title": "Arnab is now a severe cyclone",
      "category": "Climate",
      "india": "Red alert for coastal Andhra. Fishers stay ashore till 29 Oct.",
-     "summary": "IMD put Arnab 490 km off Visakhapatnam, set to turn very severe and cross the Andhra and Yanam coasts by the forenoon of 28 Oct, gusting to 140 km/h.",
-     "angle": true,
      "sources": [
       {
        "outlet": "Kalinga TV",
@@ -32,8 +30,6 @@
      "title": "Israel votes, Netanyahu trails",
      "category": "Politics",
      "india": "The winner shapes Gaza and Iran policy in the region India buys most of its oil from.",
-     "summary": "Israelis elect all 120 Knesset seats; polls gave the opposition about 52 seats and Netanyahu's alliance about 50, short of the 61 needed.",
-     "angle": false,
      "sources": [
       {
        "outlet": "Al Jazeera",
@@ -51,8 +47,6 @@
      "title": "Gulf rivals meet in Tehran, no deal yet",
      "category": "Geopolitics",
      "india": "Pakistan now has a seat at the table that could shape this war.",
-     "summary": "Saudi, Pakistani and Turkish security chiefs met Iran's president in Tehran and agreed to keep talking; no deal was announced.",
-     "angle": false,
      "sources": [
       {
        "outlet": "Al Jazeera",
@@ -70,8 +64,6 @@
      "title": "Houthis claim hits on Saudi oil pumps",
      "category": "Conflict",
      "india": "If the claims hold, the Gulf's main oil detour is under fire.",
-     "summary": "The Houthis say they hit pumping stations on Saudi Arabia's East-West oil pipeline and Riyadh's airport; Saudi Arabia has not confirmed either.",
-     "angle": false,
      "sources": [
       {
        "outlet": "Al-Monitor (Reuters)",
@@ -84,8 +76,6 @@
      "title": "Sensex bounces, rupee slips",
      "category": "Markets",
      "india": "Costly oil and a weaker rupee mean pricier imports.",
-     "summary": "The Sensex rose 483 points to 73,606.75, ending a four-day slide, but the rupee fell 25 paise to 95.19 per dollar.",
-     "angle": true,
      "sources": [
       {
        "outlet": "HDFC Sky",
@@ -98,8 +88,6 @@
      "title": "Anthropic files for a Nasdaq listing",
      "category": "Tech",
      "india": "Investors finally see what frontier AI costs, and what it earns.",
-     "summary": "Anthropic's public IPO filing shows $16.3 billion of revenue for January–June 2026 and an $80.7 billion net loss, $72.4 billion of it non-cash.",
-     "angle": false,
      "sources": [
       {
        "outlet": "TradingKey",
@@ -117,8 +105,6 @@
      "title": "EC tells SC: SIR orders were unanimous",
      "category": "India",
      "india": "Voter-roll revisions decide who gets to vote.",
-     "summary": "The Election Commission told the Supreme Court all three SIR orders were unanimous; petitioners allege the CEC overrode the other commissioners.",
-     "angle": true,
      "sources": [
       {
        "outlet": "LiveLaw",
@@ -141,8 +127,6 @@
      "title": "Cyclone Arnab makes landfall",
      "category": "Climate",
      "india": "Over 84,000 people are in Andhra relief shelters, and crop losses are still being counted.",
-     "summary": "Arnab crossed the Andhra and Yanam coasts between 2 AM and 8 AM, gusting to 150 km/h, then weakened; no deaths had been officially reported.",
-     "angle": true,
      "sources": [
       {
        "outlet": "UNI",
@@ -165,8 +149,6 @@
      "title": "Netanyahu leads Israel's vote count",
      "category": "Politics",
      "india": "A hung Knesset could mean weeks of talks or another election in a region that supplies much of India's oil.",
-     "summary": "With about 42% of ballots counted, Netanyahu's bloc had 57 seats, Eisenkot's opposition 47 and Arab-led parties 16; 61 are needed.",
-     "angle": false,
      "sources": [
       {
        "outlet": "Times of Israel",
@@ -189,8 +171,6 @@
      "title": "Iran says a tanker hit mines near Hormuz",
      "category": "Conflict",
      "india": "Brent is near $116. India imports most of its oil, so every scare costs us.",
-     "summary": "Iran's navy says an unnamed tanker caught fire after hitting mines east of Hormuz; no one else has confirmed it.",
-     "angle": true,
      "sources": [
       {
        "outlet": "A News (Anadolu)",
@@ -213,8 +193,6 @@
      "title": "Gas exporters close ranks in Moscow",
      "category": "Geopolitics",
      "india": "The countries that sell most of the world's gas are lining up as Gulf supply stays at risk.",
-     "summary": "Putin hosted the Gas Exporting Countries Forum, whose members say they hold about 70% of the world's gas reserves.",
-     "angle": false,
      "sources": [
       {
        "outlet": "Al Bawaba",
@@ -232,8 +210,6 @@
      "title": "Syria shuts its Jordan border",
      "category": "Conflict",
      "india": "A new rift between neighbours as ISIS-claimed violence spills across the border.",
-     "summary": "Syria closed the Nassib crossing after Jordanian air strikes that it says killed seven people, including three children.",
-     "angle": false,
      "sources": [
       {
        "outlet": "Al Arabiya",
@@ -251,8 +227,6 @@
      "title": "Jio debuts at a 21% premium",
      "category": "Markets",
      "india": "A strong debut shows appetite for mega-listings, even as foreign investors sell Indian shares at a record pace.",
-     "summary": "Jio Platforms opened at ₹1,358, 21.36% above its ₹1,119 issue price, after India's biggest IPO drew bids for 22.19 times the shares on offer.",
-     "angle": true,
      "sources": [
       {
        "outlet": "HDFC Sky",
@@ -280,8 +254,6 @@
      "title": "OpenAI says its AI cracked big proofs",
      "category": "Tech",
      "india": "If the proofs hold, AI moves from answering questions to producing new science.",
-     "summary": "OpenAI says its models proved or disproved three major problems in maths, computer science and physics; outside experts are still checking.",
-     "angle": false,
      "sources": [
       {
        "outlet": "Al Jazeera",
@@ -299,8 +271,6 @@
      "title": "News publishers vs the privacy law",
      "category": "India",
      "india": "Unlike EU or UK rules, India's law has no written carve-out for journalism.",
-     "summary": "21 news publishers told the Supreme Court that India's data privacy law would force journalists to seek consent from the people they cover.",
-     "angle": true,
      "sources": [
       {
        "outlet": "ThePrint (Reuters)",
@@ -313,8 +283,6 @@
      "title": "Netherlands quits Eurovision",
      "category": "Culture",
      "india": "Europe's biggest TV show faces a second year of boycotts over Gaza and Israel.",
-     "summary": "Dutch broadcaster NPO will skip Eurovision 2027 in Bulgaria, citing division over Israel's participation.",
-     "angle": false,
      "sources": [
       {
        "outlet": "Al Jazeera",
@@ -332,8 +300,6 @@
      "title": "Spain's minister slams an 'inexplicable' order",
      "category": "Global",
      "india": "A second deadly crash on this line in nine months; the minister faults control, not drivers.",
-     "summary": "A Renfe train hit a stopped Iryo train near Urda, killing at least 68; the minister says control let it restart at full speed while a stop signal was active.",
-     "angle": false,
      "sources": [
       {
        "outlet": "ABC News Australia",
@@ -366,8 +332,6 @@
      "title": "A war warning, then a letter to Tehran",
      "category": "Conflict",
      "india": "MEA says 22 Indians, including 14 seafarers, have died in the conflict so far.",
-     "summary": "The WSJ reports the US told Gulf allies to prepare for strikes on Iran after the midterms, and that JD Vance wrote to Tehran to revive talks.",
-     "angle": true,
      "sources": [
       {
        "outlet": "Ynet (WSJ report)",
@@ -400,8 +364,6 @@
      "title": "Fed holds, but two want a hike",
      "category": "Markets",
      "india": "Higher US rates tend to pull foreign money out of India and weaken the rupee.",
-     "summary": "The US Fed kept rates at 3.75–4% in a 10-2 vote; Lisa Cook and Beth Hammack wanted another rise.",
-     "angle": true,
      "sources": [
       {
        "outlet": "Investinglive",
@@ -424,8 +386,6 @@
      "title": "Netanyahu's bloc slips to 53",
      "category": "Politics",
      "india": "No bloc has a majority, so Israel faces weeks of coalition bargaining, or another vote.",
-     "summary": "With 85.6% counted, Netanyahu's bloc had 53 seats, Eisenkot's 48 and Arab-led parties 19; 61 are needed.",
-     "angle": false,
      "sources": [
       {
        "outlet": "Times of Israel",
@@ -443,8 +403,6 @@
      "title": "Cabinet clears a 3% DA hike",
      "category": "India",
      "india": "About 1.16 crore staff and pensioners get more money, backdated to July.",
-     "summary": "DA and DR rise from 60% to 63% from 1 July 2026, for about 48 lakh employees and 68 lakh pensioners.",
-     "angle": true,
      "sources": [
       {
        "outlet": "The Federal",
@@ -462,8 +420,6 @@
      "title": "Arnab's toll: five dead in Andhra",
      "category": "Climate",
      "india": "Konaseema's coconut and paddy belt took the hit. Naidu has asked the Centre for help.",
-     "summary": "CM Naidu says five people died in Andhra; about 15,000 power poles and nearly 50,000 trees came down.",
-     "angle": true,
      "sources": [
       {
        "outlet": "Free Press Journal (PTI)",
@@ -481,8 +437,6 @@
      "title": "Jio ends day one 27% above issue",
      "category": "Markets",
      "india": "India's biggest-ever IPO rewarded investors, even on a down day for the market.",
-     "summary": "Jio Platforms closed its first day at ₹1,419, 26.81% above issue, even as the Sensex fell 353 points.",
-     "angle": true,
      "sources": [
       {
        "outlet": "IndiaIPO",
@@ -500,8 +454,6 @@
      "title": "Investors balk at Google's AI bill",
      "category": "Tech",
      "india": "Investors now want proof that AI spending pays off, not just bigger budgets.",
-     "summary": "Alphabet's revenue rose 25% and Google Cloud doubled, but $51.4 billion of quarterly capex left free cash flow negative; shares fell about 10% after hours.",
-     "angle": false,
      "sources": [
       {
        "outlet": "Fortune",
@@ -524,8 +476,6 @@
      "title": "Britain's budget targets energy bills",
      "category": "Economy",
      "india": "With oil far above pre-war levels, even rich economies are paying to cushion bills.",
-     "summary": "Chancellor John Healey promised £100 to up to 20 million households in England and kept zero VAT on household electricity to July 2027.",
-     "angle": false,
      "sources": [
       {
        "outlet": "UK Investor Magazine",
@@ -543,8 +493,6 @@
      "title": "Lula's rival flees to the US",
      "category": "Politics",
      "india": "A defeated candidate leaving despite a court order tests Brazil's courts, and its US ties.",
-     "summary": "Flávio Bolsonaro reached Miami after a Supreme Court judge ordered him to surrender his passports; he denies alleged money laundering.",
-     "angle": false,
      "sources": [
       {
        "outlet": "Yahoo (CNN)",
