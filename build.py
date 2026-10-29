@@ -115,10 +115,13 @@ addEventListener("hashchange",fromHash);fromHash();
 var lock=0;chips.forEach(function(c){{c.addEventListener("click",function(){{lock=Date.now()}})}});
 if("IntersectionObserver"in window){{var io=new IntersectionObserver(function(es){{if(Date.now()-lock<900)return;es.forEach(function(x){{if(x.isIntersecting)mark(x.target.getAttribute("data-date"))}})}},{{rootMargin:"-45% 0px -50% 0px"}});document.querySelectorAll(".day[data-date]").forEach(function(d){{io.observe(d)}})}}}})();
 </script>
-{'<script src="/assets/search.js" defer></script>' if search else ''}
+{'<script src="/assets/search.js" defer></script>' if search else ''}{'<script src="/assets/share.js" defer></script>' if 'data-share' in body else ''}
 </body>
 </html>
 """
+
+
+SHARE_ICON = '<svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v13"/><path d="m7 8 5-5 5 5"/></svg>'
 
 
 def render_day(day, link_heading=True):
@@ -128,14 +131,14 @@ def render_day(day, link_heading=True):
     if link_heading:
         head = f'<a href="{dpath(day["date"])}">{head}</a>'
     out = [f'<section class="day" id="d-{day["date"]}" data-date="{day["date"]}">',
-           f'<div class="dayhead"><h2>{head}</h2><span>{n_st} {"story" if n_st == 1 else "stories"} · {n_src} sources</span></div>']
+           f'<div class="dayhead"><h2>{head}</h2><span>{n_st} {"story" if n_st == 1 else "stories"} · {n_src} sources</span><button type="button" class="share" data-share data-url="{SITE}{dpath(day["date"])}" data-title="{e("The Daily Deploy · " + long_date(day["date"]))}">{SHARE_ICON}Share day</button></div>']
     for i, s in enumerate(day["stories"], 1):
         cat = f'<span class="cat">{e(s.get("category"))}</span>' if s.get("category") else ""
         why = f'<p class="why"><b>Why it matters:</b> {e(s["india"])}</p>' if s.get("india") else ""
         links = "".join(
             f'<li><a href="{e(x["url"])}" target="_blank" rel="noopener"><span class="o">{e(x["outlet"])}</span><span class="t">{e(x.get("title") or x["url"])}</span><span class="arr" aria-hidden="true">↗</span></a></li>'
             for x in s["sources"])
-        out.append(f'<article class="story" id="s-{i:02d}"><div class="top"><span class="num">STORY {i:02d}</span>{cat}</div><h3>{e(s["title"])}</h3>{why}<ul class="srcs">{links}</ul></article>')
+        out.append(f'<article class="story" id="s-{i:02d}"><div class="top"><span class="num">STORY {i:02d}</span>{cat}<button type="button" class="share" data-share data-url="{SITE}{dpath(day["date"])}#s-{i:02d}" data-title="{e(s["title"])}">{SHARE_ICON}Share</button></div><h3>{e(s["title"])}</h3>{why}<ul class="srcs">{links}</ul></article>')
     out.append("</section>")
     return "".join(out)
 
