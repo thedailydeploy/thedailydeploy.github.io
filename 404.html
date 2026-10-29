@@ -13,8 +13,6 @@
 <meta property="og:url" content="https://thedailydeploy.github.io/404.html">
 <meta name="theme-color" content="#0b0b0b">
 <meta property="og:image" content="https://thedailydeploy.github.io/assets/og-image.png">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="alternate" type="application/rss+xml" title="The Daily Deploy · Sources" href="/feed.xml">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +26,7 @@
 <main class="wrap">
 <section class="empty-state"><h2>Page not found</h2><p>That day or page doesn't exist. Go to the <a href="/">latest sources</a> or browse the <a href="/archive/">archive</a>.</p></section>
 </main>
-<div class="wrap"><footer><span>Sources are added each morning when the day's carousel goes live at <b>8:30 AM IST</b>.</span><span><a href="/">Latest</a> · <a href="/archive/">Archive</a> · <a href="/corrections/">Corrections</a> · <a href="/feed.xml">RSS</a> · <a href="https://www.instagram.com/dailydeploybysaj/">@dailydeploybysaj</a></span></footer></div>
+<div class="wrap"><footer><span>Sources are added each morning when the day's carousel goes live at <b>8:30 AM IST</b>.</span><span><a href="/">Latest</a> · <a href="/archive/">Archive</a> · <a href="https://www.instagram.com/dailydeploybysaj/">@dailydeploybysaj</a></span></footer></div>
 <script>
 (function(){var t=new Date(Date.now()+19800000).toISOString().slice(0,10);document.querySelectorAll("[data-date='"+t+"'] .dayhead h2").forEach(function(h){var s=document.createElement("span");s.className="today";s.textContent="today";h.appendChild(s)});document.querySelectorAll(".chip[data-d='"+t+"']").forEach(function(c){c.textContent="Today"})})();
 (function(){var chips=[].slice.call(document.querySelectorAll('.chip[href^="#d-"]'));if(!chips.length)return;
@@ -40,7 +38,5 @@ var lock=0;chips.forEach(function(c){c.addEventListener("click",function(){lock=
 if("IntersectionObserver"in window){var io=new IntersectionObserver(function(es){if(Date.now()-lock<900)return;es.forEach(function(x){if(x.isIntersecting)mark(x.target.getAttribute("data-date"))})},{rootMargin:"-45% 0px -50% 0px"});document.querySelectorAll(".day[data-date]").forEach(function(d){io.observe(d)})}})();
 </script>
 <script src="/assets/search.js" defer></script>
-
-
 </body>
 </html>
