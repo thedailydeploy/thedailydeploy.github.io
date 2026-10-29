@@ -66,7 +66,12 @@ def count_sources(day):
     return sum(len(s["sources"]) for s in day["stories"])
 
 
-def page(title, desc, path, body, search=True, chips=None):
+def og_for(p):
+    """Use a share image only if it has been added to og/."""
+    return p if (ROOT / p.lstrip("/")).exists() else "/assets/og-image.png"
+
+
+def page(title, desc, path, body, search=True, chips=None, og="/assets/og-image.png"):
     canon = SITE + path
     bar = ""
     if search or chips:
@@ -90,7 +95,8 @@ def page(title, desc, path, body, search=True, chips=None):
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{canon}">
 <meta name="theme-color" content="#0b0b0b">
-<meta property="og:image" content="{SITE}/assets/og-image.png">
+<meta property="og:image" content="{SITE}{og}">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -133,14 +139,18 @@ def render_day(day, link_heading=True):
     out = [f'<section class="day" id="d-{day["date"]}" data-date="{day["date"]}">',
            f'<div class="dayhead"><h2>{head}</h2><span>{n_st} {"story" if n_st == 1 else "stories"} · {n_src} sources</span><button type="button" class="share" data-share data-url="{SITE}{dpath(day["date"])}" data-title="{e("The Daily Deploy · " + long_date(day["date"]))}">{SHARE_ICON}Share day</button></div>']
     for i, s in enumerate(day["stories"], 1):
+        out.append(story_html(day, i, s))
+    out.append("</section>")
+    return "".join(out)
+
+
+def story_html(day, i, s):
         cat = f'<span class="cat">{e(s.get("category"))}</span>' if s.get("category") else ""
         why = f'<p class="why"><b>Why it matters:</b> {e(s["india"])}</p>' if s.get("india") else ""
         links = "".join(
             f'<li><a href="{e(x["url"])}" target="_blank" rel="noopener"><span class="o">{e(x["outlet"])}</span><span class="t">{e(x.get("title") or x["url"])}</span><span class="arr" aria-hidden="true">↗</span></a></li>'
             for x in s["sources"])
-        out.append(f'<article class="story" id="s-{i:02d}"><div class="top"><span class="num">STORY {i:02d}</span>{cat}<button type="button" class="share" data-share data-url="{SITE}{dpath(day["date"])}#s-{i:02d}" data-title="{e(s["title"])}">{SHARE_ICON}Share</button></div><h3>{e(s["title"])}</h3>{why}<ul class="srcs">{links}</ul></article>')
-    out.append("</section>")
-    return "".join(out)
+        return f'<article class="story" id="s-{i:02d}"><div class="top"><span class="num">STORY {i:02d}</span>{cat}<button type="button" class="share" data-share data-url="{SITE}{dpath(day["date"])}{i:02d}/" data-title="{e(s["title"])}">{SHARE_ICON}Share</button></div><h3>{e(s["title"])}</h3>{why}<ul class="srcs">{links}</ul></article>'
 
 
 def chips_html(recent, current=None):
@@ -174,7 +184,8 @@ def main():
     else:
         body = '<section class="empty-state"><h2>No sources yet</h2><p>Each day\'s stories and their source links appear here after the carousel is posted at 8:30 AM IST.</p></section>'
         home_chips = '<a class="chip arch" href="/archive/">Archive</a>'
-    write("index.html", page("Daily Deploy Sources", "Every source behind every post from The Daily Deploy by SAJ, sorted by day and story.", "/", body, chips=home_chips))
+    write("index.html", page("Daily Deploy Sources", "Every source behind every post from The Daily Deploy by SAJ, sorted by day and story.", "/", body, chips=home_chips,
+                             og=og_for(f'/og/{days[0]["date"]}.png') if days else "/assets/og-image.png"))
 
     # day pages
     for i, d in enumerate(days):
@@ -189,8 +200,22 @@ def main():
         titles = "; ".join(s["title"] for s in d["stories"][:4])
         write(f'{d["date"].replace("-", "/")}/index.html',
               page(f'Sources · {long_date(d["date"])} · The Daily Deploy', f'Sources for The Daily Deploy, {long_date(d["date"])}: {titles}.', dpath(d["date"]),
-                   crumb + render_day(d, link_heading=False) + pager, chips=chips_html(recent, d["date"])))
+                   crumb + render_day(d, link_heading=False) + pager, chips=chips_html(recent, d["date"]), og=og_for(f'/og/{d["date"]}.png')))
         urls.append(dpath(d["date"]))
+
+        # one page per story, so a shared story link previews that story
+        dp, n = dpath(d["date"]), len(d["stories"])
+        for k, s in enumerate(d["stories"], 1):
+            prev_s = f'<a href="{dp}{k-1:02d}/">← Story {k-1:02d}</a>' if k > 1 else f'<a href="{dp}">← All stories</a>'
+            next_s = f'<a href="{dp}{k+1:02d}/">Story {k+1:02d} →</a>' if k < n else f'<a href="{dp}">All stories →</a>'
+            sbody = (f'<p class="psub"><a href="/archive/">Archive</a> / <a href="/{y}/{m}/">{MONTHS[int(m)-1]} {y}</a> / <a href="{dp}">{e(long_date(d["date"]))}</a></p>'
+                     f'<section class="day" data-date="{d["date"]}">{story_html(d, k, s)}'
+                     f'<a class="more" href="{dp}">See all {n} stories from {e(short_date(d["date"]))} →</a></section>'
+                     f'<nav class="pager" aria-label="Other stories">{prev_s}{next_s}</nav>')
+            desc = s.get("india") or f'Story {k:02d} from The Daily Deploy, {long_date(d["date"])}.'
+            write(f'{d["date"].replace("-", "/")}/{k:02d}/index.html',
+                  page(f'{s["title"]} · The Daily Deploy', desc, f"{dp}{k:02d}/", sbody, chips=chips_html(recent, d["date"]), og=og_for(f'/og/{d["date"]}-{k:02d}.png')))
+            urls.append(f"{dp}{k:02d}/")
 
     # month pages
     by_month = {}
