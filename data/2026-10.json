@@ -297,10 +297,15 @@
    "date": "2026-10-29",
    "stories": [
     {
-     "title": "Spain's worst rail crash in 13 years",
+     "title": "Spain's minister slams an 'inexplicable' order",
      "category": "Global",
-     "india": "Two deadly crashes in nine months put Spain's high-speed rail safety on trial.",
+     "india": "A second deadly crash on this line in nine months; the minister faults control, not drivers.",
      "sources": [
+      {
+       "outlet": "ABC News Australia",
+       "title": "The 'inexplicable' order behind Spain's high-speed rail disaster",
+       "url": "https://www.abc.net.au/news/2026-10-29/spain-train-crash-inexplicable-order-high-speed-rail/107321318"
+      },
       {
        "outlet": "ABC News",
        "title": "Train collision on Spain's high-speed line: at least 68 dead",
@@ -312,6 +317,11 @@
        "url": "https://www.rte.ie/news/world/2026/1028/1597051-spain-train-crash/"
       },
       {
+       "outlet": "IBTimes UK",
+       "title": "Reports that the Renfe train was cleared past a stop signal",
+       "url": "https://www.ibtimes.co.uk/spain-toledo-train-crash-red-signal-investigation-1828544"
+      },
+      {
        "outlet": "Latin Times",
        "title": "Toledo Renfe–Iryo crash: death toll",
        "url": "https://www.latintimes.com/spain-toledo-renfe-iryo-train-crash-death-toll-600640"
@@ -319,9 +329,9 @@
      ]
     },
     {
-     "title": "US warns Gulf of Iran strikes",
+     "title": "A war warning, then a letter to Tehran",
      "category": "Conflict",
-     "india": "India imports about 90% of its crude. A wider Gulf war would raise fuel costs.",
+     "india": "MEA says 22 Indians, including 14 seafarers, have died in the conflict so far.",
      "sources": [
       {
        "outlet": "Ynet (WSJ report)",
@@ -329,19 +339,46 @@
        "url": "https://www.ynetnews.com/article/s1c65jkazg"
       },
       {
-       "outlet": "Fox News",
-       "title": "Live: US–Iran war, Trump on the Strait of Hormuz",
-       "url": "https://www.foxnews.com/live-news/us-iran-war-trump-speaks-strait-hormuz-10-28-26"
+       "outlet": "Times of Israel (Reuters)",
+       "title": "Vance reaches out to Iran's security chief to restart talks, WSJ reports",
+       "url": "https://www.timesofisrael.com/liveblog_entry/vance-reaches-out-to-iran-security-chief-in-bid-to-restart-peace-talks-wsj-reports/"
       },
       {
-       "outlet": "The Pioneer",
-       "title": "Sensex falls 353 points; Brent and market close",
-       "url": "https://dailypioneer.com/business/sensex-falls-353-points-as-reliance-it-stocks-slide-jio-platforms-surges-27-on-debut"
+       "outlet": "Iran International",
+       "title": "Vance sent letter to Iran's security chief to revive peace talks",
+       "url": "https://www.iranintl.com/en/202610287801"
       },
       {
-       "outlet": "Times of Oman",
-       "title": "Crude imports meet 90% of India's demand (CII-EY)",
-       "url": "https://timesofoman.com/article/175339-crude-oil-imports-continue-to-meet-90-of-indias-domestic-demand-cii-ey-report"
+       "outlet": "CBS News",
+       "title": "Qatari mediators present a new draft deal to Tehran",
+       "url": "https://www.cbsnews.com/live-updates/iran-war-donald-trump-qatar-mediators-new-proposal-end-war/"
+      },
+      {
+       "outlet": "The Tribune (ANI)",
+       "title": "22 Indian nationals, including 14 seafarers, killed, says MEA",
+       "url": "https://www.tribuneindia.com/news/indian-diaspora/22-indian-nationals-including-14-seafarers-killed-in-west-asia-conflict-says-mea"
+      }
+     ]
+    },
+    {
+     "title": "Fed holds, but two want a hike",
+     "category": "Markets",
+     "india": "Higher US rates tend to pull foreign money out of India and weaken the rupee.",
+     "sources": [
+      {
+       "outlet": "Investinglive",
+       "title": "Fed holds at 3.75–4% in 10-2 vote as Cook dissents for a hike",
+       "url": "https://investinglive.com/central-banks/recap-fed-holds-at-3-75-4-in-10-2-vote-as-cook-dissents-for-a-hike-december-move-in-focus/"
+      },
+      {
+       "outlet": "Yahoo Finance",
+       "title": "Rates held in split vote; Warsh says politics played 'no role'",
+       "url": "https://finance.yahoo.com/economy/policy/live/fed-meeting-live-updates-interest-rates-held-steady-in-split-vote-warsh-says-politics-played-no-role-ahead-of-midterm-elections-191946928.html"
+      },
+      {
+       "outlet": "Raisin",
+       "title": "Fed statement breakdown: rates held at 3.75%–4.00%",
+       "url": "https://www.raisin.com/en-us/news/live-breakdown-fed-policy-statement-october-2026/"
       }
      ]
     },
@@ -359,6 +396,23 @@
        "outlet": "Ynet",
        "title": "Netanyahu bloc at 53, Eisenkot bloc at 48 as nearly all votes counted",
        "url": "https://www.ynetnews.com/article/hjnatbkaml"
+      }
+     ]
+    },
+    {
+     "title": "Cabinet clears a 3% DA hike",
+     "category": "India",
+     "india": "About 1.16 crore staff and pensioners get more money, backdated to July.",
+     "sources": [
+      {
+       "outlet": "The Federal",
+       "title": "Cabinet approves 3% DA and DR hike effective 1 July 2026",
+       "url": "https://thefederal.com/category/news/cabinet-approves-3-pc-da-and-dr-hike-effective-july-12026-261028"
+      },
+      {
+       "outlet": "Dainik Jagran English",
+       "title": "₹10,000 crore container push, DA hike and village reforms cleared",
+       "url": "https://english.dainikjagranmpcg.com/top-stories/%E2%82%B910000-crore-manufacturing-push-da-hike-and-village-reforms-cabinet-clears/article-41376"
       }
      ]
     },
@@ -393,6 +447,45 @@
        "outlet": "The Pioneer",
        "title": "Sensex falls 353 points as Reliance, IT slide; Jio surges 27% on debut",
        "url": "https://dailypioneer.com/business/sensex-falls-353-points-as-reliance-it-stocks-slide-jio-platforms-surges-27-on-debut"
+      }
+     ]
+    },
+    {
+     "title": "Investors balk at Google's AI bill",
+     "category": "Tech",
+     "india": "Investors now want proof that AI spending pays off, not just bigger budgets.",
+     "sources": [
+      {
+       "outlet": "Fortune",
+       "title": "Google Cloud revenue doubles as cash flow stays deep red",
+       "url": "https://fortune.com/2026/10/28/alphabet-google-stock-drops-cloud-revenue-doubles-free-cash-flow-negative/"
+      },
+      {
+       "outlet": "Business Standard (Reuters)",
+       "title": "Asian shares fall as Alphabet's earnings miss drags futures",
+       "url": "https://www.business-standard.com/markets/news/asian-shares-fall-as-alphabet-earnings-miss-drags-wall-st-futures-lower-126102900097_1.html"
+      },
+      {
+       "outlet": "AP via WSOC",
+       "title": "Asian shares mixed after Alphabet's earnings disappoint",
+       "url": "https://www.wsoctv.com/news/business/asian-shares-us/JCB4SGNNGA3A7G6F2UJGVPLHFQ/"
+      }
+     ]
+    },
+    {
+     "title": "Britain's budget targets energy bills",
+     "category": "Economy",
+     "india": "With oil far above pre-war levels, even rich economies are paying to cushion bills.",
+     "sources": [
+      {
+       "outlet": "UK Investor Magazine",
+       "title": "Autumn Budget 2026: key highlights",
+       "url": "https://ukinvestormagazine.co.uk/autumn-budget-2026-key-highlights/"
+      },
+      {
+       "outlet": "Prepared Britain",
+       "title": "Budget 2026: what it means for your household",
+       "url": "https://www.preparedbritain.co.uk/guides/budget-2026-what-it-means-for-your-household"
       }
      ]
     },
