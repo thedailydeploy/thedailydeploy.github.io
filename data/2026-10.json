@@ -292,6 +292,128 @@
      ]
     }
    ]
+  },
+  {
+   "date": "2026-10-29",
+   "stories": [
+    {
+     "title": "Spain's worst rail crash in 13 years",
+     "category": "Global",
+     "india": "Two deadly crashes in nine months put Spain's high-speed rail safety on trial.",
+     "sources": [
+      {
+       "outlet": "ABC News",
+       "title": "Train collision on Spain's high-speed line: at least 68 dead",
+       "url": "https://abcnews.com/International/10-killed-train-collision-high-speed-line-spain/story?id=137633323"
+      },
+      {
+       "outlet": "RTÉ",
+       "title": "Spain train crash near Urda",
+       "url": "https://www.rte.ie/news/world/2026/1028/1597051-spain-train-crash/"
+      },
+      {
+       "outlet": "Latin Times",
+       "title": "Toledo Renfe–Iryo crash: death toll",
+       "url": "https://www.latintimes.com/spain-toledo-renfe-iryo-train-crash-death-toll-600640"
+      }
+     ]
+    },
+    {
+     "title": "US warns Gulf of Iran strikes",
+     "category": "Conflict",
+     "india": "India imports about 90% of its crude. A wider Gulf war would raise fuel costs.",
+     "sources": [
+      {
+       "outlet": "Ynet (WSJ report)",
+       "title": "US tells Gulf allies to prepare for a campaign against Iran",
+       "url": "https://www.ynetnews.com/article/s1c65jkazg"
+      },
+      {
+       "outlet": "Fox News",
+       "title": "Live: US–Iran war, Trump on the Strait of Hormuz",
+       "url": "https://www.foxnews.com/live-news/us-iran-war-trump-speaks-strait-hormuz-10-28-26"
+      },
+      {
+       "outlet": "The Pioneer",
+       "title": "Sensex falls 353 points; Brent and market close",
+       "url": "https://dailypioneer.com/business/sensex-falls-353-points-as-reliance-it-stocks-slide-jio-platforms-surges-27-on-debut"
+      },
+      {
+       "outlet": "Times of Oman",
+       "title": "Crude imports meet 90% of India's demand (CII-EY)",
+       "url": "https://timesofoman.com/article/175339-crude-oil-imports-continue-to-meet-90-of-indias-domestic-demand-cii-ey-report"
+      }
+     ]
+    },
+    {
+     "title": "Netanyahu's bloc slips to 53",
+     "category": "Politics",
+     "india": "No bloc has a majority, so Israel faces weeks of coalition bargaining, or another vote.",
+     "sources": [
+      {
+       "outlet": "Times of Israel",
+       "title": "With over 85% counted: Netanyahu bloc 53, Eisenkot bloc 48, Arab parties 19",
+       "url": "https://www.timesofisrael.com/liveblog_entry/with-over-85-of-votes-counted-pro-netanyahu-bloc-gets-53-seats-eisenkot-led-bloc-at-48-and-arab-parties-have-19/"
+      },
+      {
+       "outlet": "Ynet",
+       "title": "Netanyahu bloc at 53, Eisenkot bloc at 48 as nearly all votes counted",
+       "url": "https://www.ynetnews.com/article/hjnatbkaml"
+      }
+     ]
+    },
+    {
+     "title": "Arnab's toll: five dead in Andhra",
+     "category": "Climate",
+     "india": "Konaseema's coconut and paddy belt took the hit. Naidu has asked the Centre for help.",
+     "sources": [
+      {
+       "outlet": "Free Press Journal (PTI)",
+       "title": "Cyclone Arnab leaves 5 dead in Andhra, uproots trees and poles",
+       "url": "https://www.freepressjournal.in/india/cyclone-arnab-leaves-5-dead-in-andhra-pradesh-uproots-thousands-of-trees-electric-poles"
+      },
+      {
+       "outlet": "Business Standard",
+       "title": "Arnab crosses Andhra coast, damages roads and power poles",
+       "url": "https://www.business-standard.com/india-news/cyclone-arnab-crosses-andhra-coast-damages-roads-electric-poles-126102800603_1.html"
+      }
+     ]
+    },
+    {
+     "title": "Jio ends day one 27% above issue",
+     "category": "Markets",
+     "india": "India's biggest-ever IPO rewarded investors, even on a down day for the market.",
+     "sources": [
+      {
+       "outlet": "IndiaIPO",
+       "title": "Jio Platforms finishes 27% above IPO price",
+       "url": "https://www.indiaipo.in/news/detail/jio-platforms-finishes-27-above-ipo-price-buy-sell-or-hold-indias-most-valuable-telco"
+      },
+      {
+       "outlet": "The Pioneer",
+       "title": "Sensex falls 353 points as Reliance, IT slide; Jio surges 27% on debut",
+       "url": "https://dailypioneer.com/business/sensex-falls-353-points-as-reliance-it-stocks-slide-jio-platforms-surges-27-on-debut"
+      }
+     ]
+    },
+    {
+     "title": "Lula's rival flees to the US",
+     "category": "Politics",
+     "india": "A defeated candidate leaving despite a court order tests Brazil's courts, and its US ties.",
+     "sources": [
+      {
+       "outlet": "Yahoo (CNN)",
+       "title": "Defeated candidate Flávio Bolsonaro reaches the US",
+       "url": "https://sg.news.yahoo.com/defeated-candidate-fl-vio-bolsonaro-193902030.html"
+      },
+      {
+       "outlet": "Colombia One",
+       "title": "Flávio Bolsonaro in Miami",
+       "url": "https://colombiaone.com/2026/10/28/flavio-bolsonaro-miami/"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
