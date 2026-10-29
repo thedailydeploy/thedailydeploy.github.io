@@ -107,33 +107,3 @@ footer a{color:var(--lime)}
 .mon:hover,.daylist a:hover,.results a:hover{background:#26251f}
 #q:focus{border-color:var(--muted)}
 .dayhead .today{font-family:var(--f-marker);color:var(--ink);letter-spacing:0;text-transform:none;font-size:14px}
-
-/* upgrades (Oct 2026): India-angle filter, summaries, corrections, subscribe */
-.filter{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-.filter span{font-family:var(--f-mono);font-size:11px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
-.fbtn{font-family:var(--f-mono);font-size:12px;text-transform:uppercase;letter-spacing:.06em;padding:6px 11px;min-height:32px;border:1px solid var(--line);border-radius:999px;background:var(--panel);color:var(--paper);cursor:pointer}
-.fbtn:hover{border-color:var(--muted)}
-.fbtn.on{background:var(--lime);color:var(--ink);border-color:var(--lime);font-weight:500}
-.fcount:not(:empty)::before{content:" · "}
-.fcount{font-weight:400;color:var(--lime)}
-.angle{font-family:var(--f-mono);font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;border:1.5px solid var(--paper-ink);padding:1px 7px;border-radius:999px}
-.sum{margin:0 0 8px;font-size:14px;max-width:62ch}
-.fix{border:1px solid var(--lime);border-radius:8px;padding:12px 14px;background:var(--bar)}
-.fix h3{margin:0 0 6px;font-family:var(--f-mono);font-size:11px;font-weight:500;color:var(--lime);letter-spacing:.08em;text-transform:uppercase}
-.fix ul{margin:0;padding:0;list-style:none;font-size:13px;display:flex;flex-direction:column;gap:4px}
-.fix b{font-weight:600}
-.fix a{display:inline-block;margin-top:6px;font-family:var(--f-mono);font-size:11px;color:var(--lime);letter-spacing:.06em;text-transform:uppercase}
-.fixlist{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
-.fixlist a{display:flex;flex-direction:column;gap:2px;padding:13px 2px;border-bottom:1px solid var(--line);text-decoration:none}
-.fixlist b{font-weight:500}
-.fixlist span{color:var(--muted);font-size:14px}
-.sub{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 16px;display:flex;flex-direction:column;gap:10px;margin-bottom:26px}
-.sub h2{margin:0;font-family:var(--f-display);font-size:18px;text-transform:uppercase}
-.sub p{margin:0;font-size:14px;color:var(--muted)}
-.sub .subl a{color:var(--lime)}
-.subf label{display:block;font-family:var(--f-mono);font-size:11px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
-.subf div{display:flex;gap:8px}
-.subf input{flex:1;min-width:0;background:var(--ink);border:1px solid var(--line);color:var(--paper);font:inherit;padding:10px 12px;border-radius:6px}
-.subf button{background:var(--lime);color:var(--ink);border:0;border-radius:6px;padding:10px 14px;min-height:44px;font-family:var(--f-mono);font-weight:500;font-size:12px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
-.rss{font-family:var(--f-mono);font-size:11px;color:var(--lime);letter-spacing:.06em;text-transform:uppercase}
-footer .priv{font-size:12px}
