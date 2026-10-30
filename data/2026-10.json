@@ -2,292 +2,127 @@
  "month": "2026-10",
  "days": [
   {
-   "date": "2026-10-27",
+   "date": "2026-10-30",
    "stories": [
     {
-     "title": "Arnab is now a severe cyclone",
-     "category": "Climate",
-     "india": "Red alert for coastal Andhra. Fishers stay ashore till 29 Oct.",
-     "sources": [
-      {
-       "outlet": "Kalinga TV",
-       "title": "Arnab intensifies into a severe cyclonic storm",
-       "url": "https://kalingatv.com/odisha/cyclonic-storm-arnab-intensifies-into-severe-cyclonic-storm-imd/"
-      },
-      {
-       "outlet": "Asianet Newsable",
-       "title": "Arnab likely to intensify before Andhra landfall",
-       "url": "https://newsable.asianetnews.com/india/severe-cyclone-arnab-likely-to-intensify-before-andhra-coast-landfall-articleshow-nig33fb"
-      },
-      {
-       "outlet": "The Statesman",
-       "title": "Cyclone Arnab explained",
-       "url": "https://www.thestatesman.com/india/cyclone-arnab-explained-landfall-date-wind-speed-affected-areas-and-safety-measures-1503655324.html"
-      }
-     ]
-    },
-    {
-     "title": "Israel votes, Netanyahu trails",
-     "category": "Politics",
-     "india": "The winner shapes Gaza and Iran policy in the region India buys most of its oil from.",
-     "sources": [
-      {
-       "outlet": "Al Jazeera",
-       "title": "Israeli elections: the possible outcomes",
-       "url": "https://www.aljazeera.com/news/2026/10/25/israeli-elections-what-are-the-possible-outcomes"
-      },
-      {
-       "outlet": "Just Security",
-       "title": "Early Edition, 26 October 2026",
-       "url": "https://www.justsecurity.org/162014/early-edition-october-26-2026/"
-      }
-     ]
-    },
-    {
-     "title": "Gulf rivals meet in Tehran, no deal yet",
-     "category": "Geopolitics",
-     "india": "Pakistan now has a seat at the table that could shape this war.",
-     "sources": [
-      {
-       "outlet": "Al Jazeera",
-       "title": "Mecca defence alliance members in Tehran",
-       "url": "https://www.aljazeera.com/news/2026/10/26/mecca-defence-alliance-members-in-tehran-to-defuse-iran-us-yemen-tensions"
-      },
-      {
-       "outlet": "Militarnyi",
-       "title": "Iran, Saudi Arabia, Turkey and Pakistan talks",
-       "url": "https://militarnyi.com/en/blogs/iran-saudi-arabia-turkey-pakistan-talks/"
-      }
-     ]
-    },
-    {
-     "title": "Houthis claim hits on Saudi oil pumps",
-     "category": "Conflict",
-     "india": "If the claims hold, the Gulf's main oil detour is under fire.",
-     "sources": [
-      {
-       "outlet": "Al-Monitor (Reuters)",
-       "title": "Houthis say they attacked Saudi pumping stations and Riyadh airport",
-       "url": "https://www.al-monitor.com/originals/2026/10/houthis-say-they-attacked-saudi-oil-pumping-stations-riyadh-airport-fighting"
-      }
-     ]
-    },
-    {
-     "title": "Sensex bounces, rupee slips",
-     "category": "Markets",
-     "india": "Costly oil and a weaker rupee mean pricier imports.",
-     "sources": [
-      {
-       "outlet": "HDFC Sky",
-       "title": "26 Oct market close: Sensex, Nifty snap four-day slide",
-       "url": "https://hdfcsky.com/news/market-close-report-today-october-26-2026-sensex-nifty-rise-as-markets-snap-four-day-losing-streak"
-      }
-     ]
-    },
-    {
-     "title": "Anthropic files for a Nasdaq listing",
+     "title": "Binance hit by a $6.3 billion hack",
      "category": "Tech",
-     "india": "Investors finally see what frontier AI costs, and what it earns.",
+     "india": "Binance has 335 million registered users, and withdrawals are on hold.",
      "sources": [
       {
-       "outlet": "TradingKey",
-       "title": "Anthropic IPO analysis",
-       "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262239609-anthropic-ipo-ai-us-ant-us-openai-tradingkey"
+       "outlet": "The Week",
+       "title": "Did a compromised engineer's laptop lead to the $6.3 billion heist?",
+       "url": "https://www.theweek.in/news/biz-tech/2026/10/30/binance-breach-did-compromised-engineers-laptop-lead-to-dollar63-billion-crypto-heist.html"
       },
       {
-       "outlet": "Bloomberg",
-       "title": "Anthropic's S-1 offers first look at its finances",
-       "url": "https://www.bloomberg.com/news/articles/2026-10-26/anthropic-ipo-s-1-filing-offers-first-look-at-claude-maker-s-finances"
+       "outlet": "Engadget",
+       "title": "Binance hacked for an estimated $6.3 billion in record crypto theft",
+       "url": "https://www.engadget.com/2301941/binance-hacked-for-estimated-6-3-billion-in-record-crypto-theft/"
+      },
+      {
+       "outlet": "Decrypt",
+       "title": "Binance finds additional points of breach in $6.3B hack",
+       "url": "https://decrypt.co/382203/binance-finds-additional-points-of-breach-in-6-3b-hack"
       }
      ]
     },
     {
-     "title": "EC tells SC: SIR orders were unanimous",
-     "category": "India",
-     "india": "Voter-roll revisions decide who gets to vote.",
-     "sources": [
-      {
-       "outlet": "LiveLaw",
-       "title": "All SIR decisions unanimously taken, ECI tells Supreme Court",
-       "url": "https://www.livelaw.in/top-stories/all-sir-decisions-unanimously-taken-form-6-not-amended-eci-tells-supreme-court-556046"
-      },
-      {
-       "outlet": "Business Today",
-       "title": "EC defends CEC in Supreme Court",
-       "url": "https://businesstoday.in/india/story/sir-orders-were-unanimous-form-6-unchanged-ec-defends-cec-gyanesh-kumar-in-supreme-court-563812-2026-10-26"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "date": "2026-10-28",
-   "stories": [
-    {
-     "title": "Cyclone Arnab makes landfall",
-     "category": "Climate",
-     "india": "Over 84,000 people are in Andhra relief shelters, and crop losses are still being counted.",
-     "sources": [
-      {
-       "outlet": "UNI",
-       "title": "IMD update on Cyclone Arnab's landfall",
-       "url": "https://uniindia.com/south-india/weather-tn-cyclone-28ms8/227879"
-      },
-      {
-       "outlet": "The Hans India",
-       "title": "Arnab completes landfall, no loss of life reported",
-       "url": "https://www.thehansindia.com/andhra-pradesh/the-worst-is-over-arnab-completes-landfall-no-loss-of-life-or-major-damage-reported-1136701"
-      },
-      {
-       "outlet": "The Pioneer",
-       "title": "Live: winds ease as Arnab crosses the Yanam coast",
-       "url": "https://dailypioneer.com/india/cyclone-arnab-live-landfall-wind-eases-yanam-andhra-coast-october-28"
-      }
-     ]
-    },
-    {
-     "title": "Netanyahu leads Israel's vote count",
-     "category": "Politics",
-     "india": "A hung Knesset could mean weeks of talks or another election in a region that supplies much of India's oil.",
-     "sources": [
-      {
-       "outlet": "Times of Israel",
-       "title": "With 42% counted, PM's bloc leads 57–47",
-       "url": "https://www.timesofisrael.com/liveblog_entry/with-nearly-42-of-ballots-counted-pms-bloc-leads-opposition-57-47-arab-parties-hold-remaining-seats/"
-      },
-      {
-       "outlet": "Jerusalem Post",
-       "title": "Israel election 2026: results and exit polls",
-       "url": "https://www.jpost.com/israel-election-2026/article-913053"
-      },
-      {
-       "outlet": "Times of Israel",
-       "title": "Netanyahu claims a decisive majority",
-       "url": "https://www.timesofisrael.com/liveblog_entry/netanyahu-right-wing-bloc-won-decisive-majority-claims-iran-weaker-than-ever-israel-stronger-than-ever/"
-      }
-     ]
-    },
-    {
-     "title": "Iran says a tanker hit mines near Hormuz",
-     "category": "Conflict",
-     "india": "Brent is near $116. India imports most of its oil, so every scare costs us.",
-     "sources": [
-      {
-       "outlet": "A News (Anadolu)",
-       "title": "Iran says tanker caught fire after hitting a mine",
-       "url": "https://www.anews.com.tr/middle-east/2026/10/27/iran-says-oil-tanker-catches-fire-after-hitting-naval-mine-east-of-strait-of-hormuz"
-      },
-      {
-       "outlet": "gCaptain",
-       "title": "Iran's mine claims, and the missing evidence",
-       "url": "https://gcaptain.com/iran-claims-more-tankers-hit-mines-in-hormuz-but-evidence-remains-elusive/"
-      },
-      {
-       "outlet": "Kitco",
-       "title": "Hormuz uncertainty keeps oil elevated",
-       "url": "https://www.kitco.com/news/article/2026-10-27/precious-metals-weaken-hormuz-uncertainty-keeps-oil-elevated-ahead-fed"
-      }
-     ]
-    },
-    {
-     "title": "Gas exporters close ranks in Moscow",
-     "category": "Geopolitics",
-     "india": "The countries that sell most of the world's gas are lining up as Gulf supply stays at risk.",
-     "sources": [
-      {
-       "outlet": "Al Bawaba",
-       "title": "Putin and Pezeshkian on energy cooperation",
-       "url": "https://www.albawaba.net/news/putin-pezeshkian-call-energy-cooperation-1640045"
-      },
-      {
-       "outlet": "TASS",
-       "title": "GECF summit in Moscow",
-       "url": "https://tass.com/politics/2208623"
-      }
-     ]
-    },
-    {
-     "title": "Syria shuts its Jordan border",
-     "category": "Conflict",
-     "india": "A new rift between neighbours as ISIS-claimed violence spills across the border.",
-     "sources": [
-      {
-       "outlet": "Al Arabiya",
-       "title": "Syria closes main crossing with Jordan after air strikes",
-       "url": "https://english.alarabiya.net/News/middle-east/2026/10/27/syria-closes-main-border-crossing-with-jordan-after-airstrikes-in-south"
-      },
-      {
-       "outlet": "Al Jazeera",
-       "title": "Why Jordan struck Syria: what we know",
-       "url": "https://www.aljazeera.com/news/2026/10/27/why-jordan-has-struck-syria-what-we-know"
-      }
-     ]
-    },
-    {
-     "title": "Jio debuts at a 21% premium",
+     "title": "AI spending fears hit Asia's chips",
      "category": "Markets",
-     "india": "A strong debut shows appetite for mega-listings, even as foreign investors sell Indian shares at a record pace.",
+     "india": "Korea's chip giants depend on US cloud spending, so AI doubts hit them first.",
      "sources": [
       {
-       "outlet": "HDFC Sky",
-       "title": "Jio Platforms debuts at ₹1,358 vs ₹1,119 issue price",
-       "url": "https://hdfcsky.com/news/jio-platforms-shares-debut-at-rs-1358-on-nse-and-bse-against-rs-1119-issue-price"
+       "outlet": "Seoul Economic Daily",
+       "title": "KOSPI plunges 3.5% on 'Alphabet shock', SK Hynix leads decline",
+       "url": "https://en.sedaily.com/news/2026/10/30/kospi-plunges-35-percent-on-alphabet-shock-samsung-chip"
       },
       {
-       "outlet": "Sahi",
-       "title": "Jio Platforms listing price",
-       "url": "https://www.sahi.com/news/jio-platforms-lists-at-1-358-versus-issue-price-of-1-119-per-share"
+       "outlet": "Invezz",
+       "title": "KOSPI crashes 5% as Samsung, SK Hynix tumble",
+       "url": "https://invezz.com/news/2026/10/30/kospi-crash-today-samsung-sk-hynix-october-30/"
       },
       {
-       "outlet": "Angel One",
-       "title": "Jio IPO subscribed 22.19 times",
-       "url": "https://www.angelone.in/news/ipos/reliance-s-jio-platforms-ipo-set-to-list-tomorrow-on-october-28-2026-after-getting-22-19-times-subscription"
-      },
-      {
-       "outlet": "HDFC Sky",
-       "title": "27 Oct market close and FPI selling",
-       "url": "https://hdfcsky.com/news/stock-market-close-report-today-october-27-2026-sensex-nifty-flatline-as-fed-looms-oil-boils"
+       "outlet": "Aju Press",
+       "title": "Alphabet's heavy AI spending hits chip stocks in Seoul and Tokyo",
+       "url": "https://www.ajupress.com/view/20261030153229938"
       }
      ]
     },
     {
-     "title": "OpenAI says its AI cracked big proofs",
-     "category": "Tech",
-     "india": "If the proofs hold, AI moves from answering questions to producing new science.",
+     "title": "Iran says tankers hit mines in Hormuz",
+     "category": "Conflict",
+     "india": "India imports about 90% of its crude, and Brent was above $116 on Friday.",
      "sources": [
       {
-       "outlet": "Al Jazeera",
-       "title": "AI makes discoveries in maths, CS and physics, OpenAI says",
-       "url": "https://www.aljazeera.com/economy/2026/10/27/ai-makes-discoveries-in-mathematics-computer-science-physics-openai-says"
+       "outlet": "CBS News",
+       "title": "Tankers strike mines in Strait of Hormuz, Iran says",
+       "url": "https://www.cbsnews.com/live-updates/iran-war-donald-trump-qatar-mediators-new-proposal-end-war/"
       },
       {
-       "outlet": "Quartz",
-       "title": "OpenAI's claimed discoveries, explained",
-       "url": "https://qz.com/openai-ai-discoveries-math-computer-science-physics-102726"
+       "outlet": "Gulf News",
+       "title": "Iran claims tankers hit mines; UKMTO confirms strike off Oman",
+       "url": "https://gulfnews.com/world/mena/middle-east-war-iran-claims-tankers-hit-mines-in-strait-of-hormuz-ukmto-confirms-strike-off-oman-fired-us-general-reportedly-admitted-iran-leaks-1.500729137"
+      },
+      {
+       "outlet": "Arab News",
+       "title": "Revolutionary Guards say oil tankers hit mines in Hormuz",
+       "url": "https://www.arabnews.com/middle-east/irans-revolutionary-guards-say-three-oil-tankers-hit-mines-in-strait-of-hormuz-3008795"
       }
      ]
     },
     {
-     "title": "News publishers vs the privacy law",
+     "title": "Lagarde will quit the ECB early",
+     "category": "Economy",
+     "india": "Her successor will set euro rates through an energy shock and France's 2027 election.",
+     "sources": [
+      {
+       "outlet": "ECB",
+       "title": "ECB President Lagarde to step down on 7 February 2027",
+       "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html"
+      },
+      {
+       "outlet": "France 24",
+       "title": "Lagarde to step down nine months before her term ends",
+       "url": "https://www.france24.com/en/europe/20261029-ecb-president-christine-lagarde-to-step-down-in-february-2027-nine-months-before-term-ends"
+      },
+      {
+       "outlet": "Euronews",
+       "title": "Lagarde to step down next February",
+       "url": "https://www.euronews.com/2026/10/29/ecb-president-christine-lagarde-to-step-down-in-february-months-before-her-term-ends"
+      }
+     ]
+    },
+    {
+     "title": "SC: banks should repay scam victims",
      "category": "India",
-     "india": "Unlike EU or UK rules, India's law has no written carve-out for journalism.",
+     "india": "Scam victims could get their money back when banks failed to protect it.",
      "sources": [
       {
-       "outlet": "ThePrint (Reuters)",
-       "title": "Media groups tell court the privacy law could shut newsrooms",
-       "url": "https://theprint.in/world/indias-privacy-law-could-shut-down-newsrooms-media-groups-tell-court/3082582/"
+       "outlet": "Business Standard",
+       "title": "SC asks RBI to make banks compensate digital arrest, cyber fraud victims",
+       "url": "https://www.business-standard.com/india-news/sc-asks-rbi-to-make-banks-compensate-victims-of-digital-arrest-cyber-fraud-126102901741_1.html"
+      },
+      {
+       "outlet": "Bar & Bench",
+       "title": "Supreme Court to vet RBI's digital fraud rules, says banks must compensate",
+       "url": "https://www.barandbench.com/news/litigation/supreme-court-to-vet-rbis-digital-fraud-regulations-before-notification-says-banks-must-compensate-victims"
       }
      ]
     },
     {
-     "title": "Netherlands quits Eurovision",
+     "title": "Star Trek's Captain Picard dies at 86",
      "category": "Culture",
-     "india": "Europe's biggest TV show faces a second year of boycotts over Gaza and Israel.",
+     "india": "He carried Shakespearean stagecraft into the biggest sci-fi and superhero franchises.",
      "sources": [
       {
-       "outlet": "Al Jazeera",
-       "title": "The Netherlands pulls out of Eurovision 2027",
-       "url": "https://www.aljazeera.com/news/2026/10/27/the-netherlands-pulls-out-of-eurovision-2027-due-to-israel-sensitivities"
+       "outlet": "CBC",
+       "title": "Star Trek actor Patrick Stewart dead at 86",
+       "url": "https://www.cbc.ca/news/entertainment/star-trek-patrick-stewart-dead-9.7401818"
+      },
+      {
+       "outlet": "Variety",
+       "title": "Patrick Stewart, Captain Picard and Charles Xavier, dies at 86",
+       "url": "https://variety.com/2026/tv/news/patrick-stewart-dead-star-trek-picardx-men-xavier-1236934412/"
       }
      ]
     }
@@ -503,6 +338,298 @@
        "outlet": "Colombia One",
        "title": "Flávio Bolsonaro in Miami",
        "url": "https://colombiaone.com/2026/10/28/flavio-bolsonaro-miami/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "stories": [
+    {
+     "title": "Cyclone Arnab makes landfall",
+     "category": "Climate",
+     "india": "Over 84,000 people are in Andhra relief shelters, and crop losses are still being counted.",
+     "sources": [
+      {
+       "outlet": "UNI",
+       "title": "IMD update on Cyclone Arnab's landfall",
+       "url": "https://uniindia.com/south-india/weather-tn-cyclone-28ms8/227879"
+      },
+      {
+       "outlet": "The Hans India",
+       "title": "Arnab completes landfall, no loss of life reported",
+       "url": "https://www.thehansindia.com/andhra-pradesh/the-worst-is-over-arnab-completes-landfall-no-loss-of-life-or-major-damage-reported-1136701"
+      },
+      {
+       "outlet": "The Pioneer",
+       "title": "Live: winds ease as Arnab crosses the Yanam coast",
+       "url": "https://dailypioneer.com/india/cyclone-arnab-live-landfall-wind-eases-yanam-andhra-coast-october-28"
+      }
+     ]
+    },
+    {
+     "title": "Netanyahu leads Israel's vote count",
+     "category": "Politics",
+     "india": "A hung Knesset could mean weeks of talks or another election in a region that supplies much of India's oil.",
+     "sources": [
+      {
+       "outlet": "Times of Israel",
+       "title": "With 42% counted, PM's bloc leads 57–47",
+       "url": "https://www.timesofisrael.com/liveblog_entry/with-nearly-42-of-ballots-counted-pms-bloc-leads-opposition-57-47-arab-parties-hold-remaining-seats/"
+      },
+      {
+       "outlet": "Jerusalem Post",
+       "title": "Israel election 2026: results and exit polls",
+       "url": "https://www.jpost.com/israel-election-2026/article-913053"
+      },
+      {
+       "outlet": "Times of Israel",
+       "title": "Netanyahu claims a decisive majority",
+       "url": "https://www.timesofisrael.com/liveblog_entry/netanyahu-right-wing-bloc-won-decisive-majority-claims-iran-weaker-than-ever-israel-stronger-than-ever/"
+      }
+     ]
+    },
+    {
+     "title": "Iran says a tanker hit mines near Hormuz",
+     "category": "Conflict",
+     "india": "Brent is near $116. India imports most of its oil, so every scare costs us.",
+     "sources": [
+      {
+       "outlet": "A News (Anadolu)",
+       "title": "Iran says tanker caught fire after hitting a mine",
+       "url": "https://www.anews.com.tr/middle-east/2026/10/27/iran-says-oil-tanker-catches-fire-after-hitting-naval-mine-east-of-strait-of-hormuz"
+      },
+      {
+       "outlet": "gCaptain",
+       "title": "Iran's mine claims, and the missing evidence",
+       "url": "https://gcaptain.com/iran-claims-more-tankers-hit-mines-in-hormuz-but-evidence-remains-elusive/"
+      },
+      {
+       "outlet": "Kitco",
+       "title": "Hormuz uncertainty keeps oil elevated",
+       "url": "https://www.kitco.com/news/article/2026-10-27/precious-metals-weaken-hormuz-uncertainty-keeps-oil-elevated-ahead-fed"
+      }
+     ]
+    },
+    {
+     "title": "Gas exporters close ranks in Moscow",
+     "category": "Geopolitics",
+     "india": "The countries that sell most of the world's gas are lining up as Gulf supply stays at risk.",
+     "sources": [
+      {
+       "outlet": "Al Bawaba",
+       "title": "Putin and Pezeshkian on energy cooperation",
+       "url": "https://www.albawaba.net/news/putin-pezeshkian-call-energy-cooperation-1640045"
+      },
+      {
+       "outlet": "TASS",
+       "title": "GECF summit in Moscow",
+       "url": "https://tass.com/politics/2208623"
+      }
+     ]
+    },
+    {
+     "title": "Syria shuts its Jordan border",
+     "category": "Conflict",
+     "india": "A new rift between neighbours as ISIS-claimed violence spills across the border.",
+     "sources": [
+      {
+       "outlet": "Al Arabiya",
+       "title": "Syria closes main crossing with Jordan after air strikes",
+       "url": "https://english.alarabiya.net/News/middle-east/2026/10/27/syria-closes-main-border-crossing-with-jordan-after-airstrikes-in-south"
+      },
+      {
+       "outlet": "Al Jazeera",
+       "title": "Why Jordan struck Syria: what we know",
+       "url": "https://www.aljazeera.com/news/2026/10/27/why-jordan-has-struck-syria-what-we-know"
+      }
+     ]
+    },
+    {
+     "title": "Jio debuts at a 21% premium",
+     "category": "Markets",
+     "india": "A strong debut shows appetite for mega-listings, even as foreign investors sell Indian shares at a record pace.",
+     "sources": [
+      {
+       "outlet": "HDFC Sky",
+       "title": "Jio Platforms debuts at ₹1,358 vs ₹1,119 issue price",
+       "url": "https://hdfcsky.com/news/jio-platforms-shares-debut-at-rs-1358-on-nse-and-bse-against-rs-1119-issue-price"
+      },
+      {
+       "outlet": "Sahi",
+       "title": "Jio Platforms listing price",
+       "url": "https://www.sahi.com/news/jio-platforms-lists-at-1-358-versus-issue-price-of-1-119-per-share"
+      },
+      {
+       "outlet": "Angel One",
+       "title": "Jio IPO subscribed 22.19 times",
+       "url": "https://www.angelone.in/news/ipos/reliance-s-jio-platforms-ipo-set-to-list-tomorrow-on-october-28-2026-after-getting-22-19-times-subscription"
+      },
+      {
+       "outlet": "HDFC Sky",
+       "title": "27 Oct market close and FPI selling",
+       "url": "https://hdfcsky.com/news/stock-market-close-report-today-october-27-2026-sensex-nifty-flatline-as-fed-looms-oil-boils"
+      }
+     ]
+    },
+    {
+     "title": "OpenAI says its AI cracked big proofs",
+     "category": "Tech",
+     "india": "If the proofs hold, AI moves from answering questions to producing new science.",
+     "sources": [
+      {
+       "outlet": "Al Jazeera",
+       "title": "AI makes discoveries in maths, CS and physics, OpenAI says",
+       "url": "https://www.aljazeera.com/economy/2026/10/27/ai-makes-discoveries-in-mathematics-computer-science-physics-openai-says"
+      },
+      {
+       "outlet": "Quartz",
+       "title": "OpenAI's claimed discoveries, explained",
+       "url": "https://qz.com/openai-ai-discoveries-math-computer-science-physics-102726"
+      }
+     ]
+    },
+    {
+     "title": "News publishers vs the privacy law",
+     "category": "India",
+     "india": "Unlike EU or UK rules, India's law has no written carve-out for journalism.",
+     "sources": [
+      {
+       "outlet": "ThePrint (Reuters)",
+       "title": "Media groups tell court the privacy law could shut newsrooms",
+       "url": "https://theprint.in/world/indias-privacy-law-could-shut-down-newsrooms-media-groups-tell-court/3082582/"
+      }
+     ]
+    },
+    {
+     "title": "Netherlands quits Eurovision",
+     "category": "Culture",
+     "india": "Europe's biggest TV show faces a second year of boycotts over Gaza and Israel.",
+     "sources": [
+      {
+       "outlet": "Al Jazeera",
+       "title": "The Netherlands pulls out of Eurovision 2027",
+       "url": "https://www.aljazeera.com/news/2026/10/27/the-netherlands-pulls-out-of-eurovision-2027-due-to-israel-sensitivities"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "stories": [
+    {
+     "title": "Arnab is now a severe cyclone",
+     "category": "Climate",
+     "india": "Red alert for coastal Andhra. Fishers stay ashore till 29 Oct.",
+     "sources": [
+      {
+       "outlet": "Kalinga TV",
+       "title": "Arnab intensifies into a severe cyclonic storm",
+       "url": "https://kalingatv.com/odisha/cyclonic-storm-arnab-intensifies-into-severe-cyclonic-storm-imd/"
+      },
+      {
+       "outlet": "Asianet Newsable",
+       "title": "Arnab likely to intensify before Andhra landfall",
+       "url": "https://newsable.asianetnews.com/india/severe-cyclone-arnab-likely-to-intensify-before-andhra-coast-landfall-articleshow-nig33fb"
+      },
+      {
+       "outlet": "The Statesman",
+       "title": "Cyclone Arnab explained",
+       "url": "https://www.thestatesman.com/india/cyclone-arnab-explained-landfall-date-wind-speed-affected-areas-and-safety-measures-1503655324.html"
+      }
+     ]
+    },
+    {
+     "title": "Israel votes, Netanyahu trails",
+     "category": "Politics",
+     "india": "The winner shapes Gaza and Iran policy in the region India buys most of its oil from.",
+     "sources": [
+      {
+       "outlet": "Al Jazeera",
+       "title": "Israeli elections: the possible outcomes",
+       "url": "https://www.aljazeera.com/news/2026/10/25/israeli-elections-what-are-the-possible-outcomes"
+      },
+      {
+       "outlet": "Just Security",
+       "title": "Early Edition, 26 October 2026",
+       "url": "https://www.justsecurity.org/162014/early-edition-october-26-2026/"
+      }
+     ]
+    },
+    {
+     "title": "Gulf rivals meet in Tehran, no deal yet",
+     "category": "Geopolitics",
+     "india": "Pakistan now has a seat at the table that could shape this war.",
+     "sources": [
+      {
+       "outlet": "Al Jazeera",
+       "title": "Mecca defence alliance members in Tehran",
+       "url": "https://www.aljazeera.com/news/2026/10/26/mecca-defence-alliance-members-in-tehran-to-defuse-iran-us-yemen-tensions"
+      },
+      {
+       "outlet": "Militarnyi",
+       "title": "Iran, Saudi Arabia, Turkey and Pakistan talks",
+       "url": "https://militarnyi.com/en/blogs/iran-saudi-arabia-turkey-pakistan-talks/"
+      }
+     ]
+    },
+    {
+     "title": "Houthis claim hits on Saudi oil pumps",
+     "category": "Conflict",
+     "india": "If the claims hold, the Gulf's main oil detour is under fire.",
+     "sources": [
+      {
+       "outlet": "Al-Monitor (Reuters)",
+       "title": "Houthis say they attacked Saudi pumping stations and Riyadh airport",
+       "url": "https://www.al-monitor.com/originals/2026/10/houthis-say-they-attacked-saudi-oil-pumping-stations-riyadh-airport-fighting"
+      }
+     ]
+    },
+    {
+     "title": "Sensex bounces, rupee slips",
+     "category": "Markets",
+     "india": "Costly oil and a weaker rupee mean pricier imports.",
+     "sources": [
+      {
+       "outlet": "HDFC Sky",
+       "title": "26 Oct market close: Sensex, Nifty snap four-day slide",
+       "url": "https://hdfcsky.com/news/market-close-report-today-october-26-2026-sensex-nifty-rise-as-markets-snap-four-day-losing-streak"
+      }
+     ]
+    },
+    {
+     "title": "Anthropic files for a Nasdaq listing",
+     "category": "Tech",
+     "india": "Investors finally see what frontier AI costs, and what it earns.",
+     "sources": [
+      {
+       "outlet": "TradingKey",
+       "title": "Anthropic IPO analysis",
+       "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262239609-anthropic-ipo-ai-us-ant-us-openai-tradingkey"
+      },
+      {
+       "outlet": "Bloomberg",
+       "title": "Anthropic's S-1 offers first look at its finances",
+       "url": "https://www.bloomberg.com/news/articles/2026-10-26/anthropic-ipo-s-1-filing-offers-first-look-at-claude-maker-s-finances"
+      }
+     ]
+    },
+    {
+     "title": "EC tells SC: SIR orders were unanimous",
+     "category": "India",
+     "india": "Voter-roll revisions decide who gets to vote.",
+     "sources": [
+      {
+       "outlet": "LiveLaw",
+       "title": "All SIR decisions unanimously taken, ECI tells Supreme Court",
+       "url": "https://www.livelaw.in/top-stories/all-sir-decisions-unanimously-taken-form-6-not-amended-eci-tells-supreme-court-556046"
+      },
+      {
+       "outlet": "Business Today",
+       "title": "EC defends CEC in Supreme Court",
+       "url": "https://businesstoday.in/india/story/sir-orders-were-unanimous-form-6-unchanged-ec-defends-cec-gyanesh-kumar-in-supreme-court-563812-2026-10-26"
       }
      ]
     }
