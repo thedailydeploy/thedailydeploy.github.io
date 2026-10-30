@@ -10,19 +10,24 @@
      "india": "Binance has 335 million registered users, and withdrawals are on hold.",
      "sources": [
       {
-       "outlet": "The Week",
-       "title": "Did a compromised engineer's laptop lead to the $6.3 billion heist?",
-       "url": "https://www.theweek.in/news/biz-tech/2026/10/30/binance-breach-did-compromised-engineers-laptop-lead-to-dollar63-billion-crypto-heist.html"
+       "outlet": "Reuters via Yahoo Finance",
+       "title": "Tether and Circle freeze funds after the Binance hack",
+       "url": "https://finance.yahoo.com/markets/crypto/articles/tether-circle-freeze-2-38-222607515.html"
       },
       {
-       "outlet": "Engadget",
-       "title": "Binance hacked for an estimated $6.3 billion in record crypto theft",
-       "url": "https://www.engadget.com/2301941/binance-hacked-for-estimated-6-3-billion-in-record-crypto-theft/"
+       "outlet": "Euronews",
+       "title": "Binance confirms major hack, more than $2.5bn frozen",
+       "url": "https://www.euronews.com/2026/10/30/crypto-platform-binance-confirms-major-hack-with-more-than-25bn-frozen"
       },
       {
-       "outlet": "Decrypt",
-       "title": "Binance finds additional points of breach in $6.3B hack",
-       "url": "https://decrypt.co/382203/binance-finds-additional-points-of-breach-in-6-3b-hack"
+       "outlet": "CoinGape",
+       "title": "Binance completes initial investigation into $6.3B hack",
+       "url": "https://coingape.com/binance-completes-initial-investigation-into-6-3b-hack-heres-what-happened/"
+      },
+      {
+       "outlet": "Cointelegraph",
+       "title": "Live: Binance hack linked to North Korea's TraderTraitor",
+       "url": "https://cointelegraph.com/news/live-updates-binance-63b-hack-linked-to-north-koreas-tradertraitor"
       }
      ]
     },
@@ -32,19 +37,34 @@
      "india": "Korea's chip giants depend on US cloud spending, so AI doubts hit them first.",
      "sources": [
       {
-       "outlet": "Seoul Economic Daily",
-       "title": "KOSPI plunges 3.5% on 'Alphabet shock', SK Hynix leads decline",
-       "url": "https://en.sedaily.com/news/2026/10/30/kospi-plunges-35-percent-on-alphabet-shock-samsung-chip"
+       "outlet": "SBS News",
+       "title": "KOSPI plunges as AI spending fears hit chipmakers",
+       "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008823068"
       },
       {
-       "outlet": "Invezz",
-       "title": "KOSPI crashes 5% as Samsung, SK Hynix tumble",
-       "url": "https://invezz.com/news/2026/10/30/kospi-crash-today-samsung-sk-hynix-october-30/"
+       "outlet": "StockTitan",
+       "title": "Stock market today, 29 October: Alphabet and Intel slide",
+       "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-29-2026"
       },
       {
-       "outlet": "Aju Press",
-       "title": "Alphabet's heavy AI spending hits chip stocks in Seoul and Tokyo",
-       "url": "https://www.ajupress.com/view/20261030153229938"
+       "outlet": "TradingKey",
+       "title": "Japan and Korea stocks: SK Hynix, KOSPI and Nikkei close",
+       "url": "https://www.tradingkey.com/analysis/stocks/more/262258740-japan-korea-stocks-skhy-kospi-nikkei-samsung-kioxia-ai-softbank-fomc-hbm-google-amzn-tradingkey"
+      },
+      {
+       "outlet": "HDFC Sky",
+       "title": "30 Oct open: Sensex and Nifty tick higher on IT earnings",
+       "url": "https://hdfcsky.com/news/bse-nse-sensex-october-30-2026-open-report-sensex-nifty-tick-higher-on-it-earnings-as-oil-limits-gains"
+      },
+      {
+       "outlet": "Kotak Neo",
+       "title": "Markets trade higher in afternoon deals",
+       "url": "https://www.kotakneo.com/news/market-news/markets-trade-higher-in-afternoon-deals/"
+      },
+      {
+       "outlet": "FourWeekMBA",
+       "title": "Asia's AI chip stocks fall as KOSPI drops",
+       "url": "https://fourweekmba.com/ai-asias-ai-chip-stocks-fell-nearly-10-as-kospi-lost-5-7"
       }
      ]
     },
@@ -55,18 +75,23 @@
      "sources": [
       {
        "outlet": "CBS News",
-       "title": "Tankers strike mines in Strait of Hormuz, Iran says",
+       "title": "Live: tankers strike mines in Hormuz, Iran says",
        "url": "https://www.cbsnews.com/live-updates/iran-war-donald-trump-qatar-mediators-new-proposal-end-war/"
       },
       {
-       "outlet": "Gulf News",
-       "title": "Iran claims tankers hit mines; UKMTO confirms strike off Oman",
-       "url": "https://gulfnews.com/world/mena/middle-east-war-iran-claims-tankers-hit-mines-in-strait-of-hormuz-ukmto-confirms-strike-off-oman-fired-us-general-reportedly-admitted-iran-leaks-1.500729137"
+       "outlet": "National Security Journal",
+       "title": "Iran says three tankers hit its mines, yet names no ship",
+       "url": "https://nationalsecurityjournal.org/something-strange-is-happening-in-the-strait-of-hormuz-iran-says-three-tankers-hit-its-mines-yet-it-hasnt-named-a-single-ship/"
       },
       {
-       "outlet": "Arab News",
-       "title": "Revolutionary Guards say oil tankers hit mines in Hormuz",
-       "url": "https://www.arabnews.com/middle-east/irans-revolutionary-guards-say-three-oil-tankers-hit-mines-in-strait-of-hormuz-3008795"
+       "outlet": "HDFC Sky",
+       "title": "Brent above $116 as oil limits market gains",
+       "url": "https://hdfcsky.com/news/bse-nse-sensex-october-30-2026-open-report-sensex-nifty-tick-higher-on-it-earnings-as-oil-limits-gains"
+      },
+      {
+       "outlet": "Times of Oman (CII-EY)",
+       "title": "Crude imports still meet 90% of India's demand",
+       "url": "https://timesofoman.com/article/175339-crude-oil-imports-continue-to-meet-90-of-indias-domestic-demand-cii-ey-report"
       }
      ]
     },
@@ -81,14 +106,14 @@
        "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html"
       },
       {
-       "outlet": "France 24",
-       "title": "Lagarde to step down nine months before her term ends",
-       "url": "https://www.france24.com/en/europe/20261029-ecb-president-christine-lagarde-to-step-down-in-february-2027-nine-months-before-term-ends"
+       "outlet": "ECB",
+       "title": "Monetary policy decision: rates held",
+       "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html"
       },
       {
-       "outlet": "Euronews",
-       "title": "Lagarde to step down next February",
-       "url": "https://www.euronews.com/2026/10/29/ecb-president-christine-lagarde-to-step-down-in-february-months-before-her-term-ends"
+       "outlet": "RTÉ (Reuters)",
+       "title": "Christine Lagarde to leave the ECB early",
+       "url": "https://www.rte.ie/news/business/2026/1029/1597194-christine-lagarde/"
       }
      ]
     },
@@ -103,9 +128,9 @@
        "url": "https://www.business-standard.com/india-news/sc-asks-rbi-to-make-banks-compensate-victims-of-digital-arrest-cyber-fraud-126102901741_1.html"
       },
       {
-       "outlet": "Bar & Bench",
-       "title": "Supreme Court to vet RBI's digital fraud rules, says banks must compensate",
-       "url": "https://www.barandbench.com/news/litigation/supreme-court-to-vet-rbis-digital-fraud-regulations-before-notification-says-banks-must-compensate-victims"
+       "outlet": "India TV",
+       "title": "SC to examine RBI's KYC amendment directions in digital arrest case",
+       "url": "https://www.indiatvnews.com/news/india/digital-arrest-sc-says-it-will-examine-rbi-s-kyc-amendment-directions-to-be-operationalised-by-december-31-2026-10-29-1058215"
       }
      ]
     },
@@ -114,6 +139,11 @@
      "category": "Culture",
      "india": "He carried Shakespearean stagecraft into the biggest sci-fi and superhero franchises.",
      "sources": [
+      {
+       "outlet": "RTÉ",
+       "title": "Star Trek actor Patrick Stewart dies aged 86",
+       "url": "https://www.rte.ie/entertainment/2026/1029/1597289-star-trek-actor-patrick-stewart-dies-aged-86/"
+      },
       {
        "outlet": "CBC",
        "title": "Star Trek actor Patrick Stewart dead at 86",
