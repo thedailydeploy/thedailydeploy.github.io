@@ -2,6 +2,143 @@
  "month": "2026-10",
  "days": [
   {
+   "date": "2026-10-31",
+   "stories": [
+    {
+     "title": "Oil hits a six-month high on Hormuz blasts",
+     "category": "Conflict",
+     "india": "India imports about 90% of its crude; 14 Indian seafarers have died in this war.",
+     "sources": [
+      {
+       "outlet": "Reuters via Yahoo Finance",
+       "title": "Oil rises on supply concerns as Houthis claim strikes",
+       "url": "https://finance.yahoo.com/news/oil-rises-supply-concerns-houthis-022725347.html"
+      },
+      {
+       "outlet": "Al Jazeera",
+       "title": "Oman rescues 25 from burning oil tanker in Hormuz",
+       "url": "https://www.aljazeera.com/news/2026/10/30/oman-rescues-25-from-burning-oil-tanker-in-strait-of-hormuz"
+      },
+      {
+       "outlet": "The National",
+       "title": "Oil set for sharp monthly rise on Hormuz strikes",
+       "url": "https://thenationalnews.com/business/markets/2026/10/30/oil-prices-set-for-sharp-monthly-rise-on-hormuz-strikes-and-us-threat-to-hit-iran"
+      },
+      {
+       "outlet": "OilPrice.com",
+       "title": "Houthis claim fresh strikes on Saudi refineries",
+       "url": "https://oilprice.com/Latest-Energy-News/World-News/Houthis-Claim-Fresh-Strikes-on-Saudi-Oil-Refineries-and-Aramco-Facilities.html"
+      },
+      {
+       "outlet": "ANI",
+       "title": "MEA figure on Indian seafarers killed",
+       "url": "https://aninews.in/news/world/us/tactical-calculations-should-not-lead-to-overlooking-dangers-of-terror-jaishankar-at-g20-foreign-ministers8217-meeting16020261031013302/"
+      },
+      {
+       "outlet": "Times of Oman (CII-EY)",
+       "title": "Crude imports still meet 90% of India's demand",
+       "url": "https://timesofoman.com/article/175339-crude-oil-imports-continue-to-meet-90-of-indias-domestic-demand-cii-ey-report"
+      }
+     ]
+    },
+    {
+     "title": "Wall Street joins the AI sell-off",
+     "category": "Markets",
+     "india": "Gold gets cheaper before Dhanteras, but US rate hikes can pull money from India.",
+     "sources": [
+      {
+       "outlet": "Yahoo Finance",
+       "title": "Stock market today, 30 Oct: AI sell-off hits Nasdaq",
+       "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-ai-sell-off-191429143.html"
+      },
+      {
+       "outlet": "TheStreet",
+       "title": "Stock market today: Dow, S&P 500, Nasdaq, 30 Oct",
+       "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026"
+      },
+      {
+       "outlet": "Yahoo Finance",
+       "title": "Gold price hits a yearly low",
+       "url": "https://finance.yahoo.com/markets/commodities/articles/gold-price-just-hit-yearly-195453224.html"
+      },
+      {
+       "outlet": "IANS",
+       "title": "Gold, silver fall before festive buying",
+       "url": "https://ianslive.in/gold-silver-decline-up-to-2-pc-on-hawkish-fed-signals-ahead-of-festive-buying--20261030125258"
+      }
+     ]
+    },
+    {
+     "title": "A midnight launch for India's NavIC",
+     "category": "Science",
+     "india": "NavIC is India's own GPS alternative, and new satellites keep it running.",
+     "sources": [
+      {
+       "outlet": "Daijiworld",
+       "title": "GSLV-F18 places NVS-03 in orbit",
+       "url": "https://daijiworld.com/news/newsDisplay?newsID=1333967"
+      },
+      {
+       "outlet": "Fone Arena",
+       "title": "ISRO GSLV-F18 launches NVS-03 NavIC satellite",
+       "url": "https://www.fonearena.com/blog/496138/isro-gslv-f18-nvs-03-navic-satellite.html"
+      },
+      {
+       "outlet": "ISRO",
+       "title": "GSLV-F18 / NVS-03 mission page",
+       "url": "https://www.isro.gov.in/Mission_GSLVF18.html"
+      }
+     ]
+    },
+    {
+     "title": "World Bank: extreme poverty fell to 2.6%",
+     "category": "India",
+     "india": "Fewer Indians are desperately poor, but jobs for the young remain the weak spot.",
+     "sources": [
+      {
+       "outlet": "ANI",
+       "title": "India records one of the fastest poverty declines",
+       "url": "https://aninews.in/news/business/india-records-one-of-the-fastest-poverty-declines-in-the-world-poverty-down-from-271-to-26-world-bank20261030093513/"
+      },
+      {
+       "outlet": "Outlook",
+       "title": "World Bank: 496 million lifted out of poverty",
+       "url": "https://www.outlookindia.com/national/world-bank-india-lifted-496-million-people-out-of-poverty-between-2011-and-2023-one-of-the-fastest-in-the-world"
+      }
+     ]
+    },
+    {
+     "title": "Jaishankar's terror warning at the G20",
+     "category": "Geopolitics",
+     "india": "It was widely read as a jab at Washington's outreach to Pakistan's army chief.",
+     "sources": [
+      {
+       "outlet": "ANI",
+       "title": "Tactical calculations should not overlook dangers of terror",
+       "url": "https://aninews.in/news/world/us/tactical-calculations-should-not-lead-to-overlooking-dangers-of-terror-jaishankar-at-g20-foreign-ministers8217-meeting16020261031013302/"
+      },
+      {
+       "outlet": "The Wire",
+       "title": "Jaishankar warns against tactical calculations at G20",
+       "url": "https://m.thewire.in/article/news/at-g20-jaishankar-warns-against-letting-tactical-calculations-trump-concerns-over-terrorism"
+      }
+     ]
+    },
+    {
+     "title": "The Pope mails his ballot",
+     "category": "Global Politics",
+     "india": "Tuesday's vote decides Congress; new US strikes on Iran are reportedly planned after it.",
+     "sources": [
+      {
+       "outlet": "Al Jazeera",
+       "title": "Pope Leo becomes first pontiff to vote in a US general election",
+       "url": "https://www.aljazeera.com/news/2026/10/31/pope-leo-becomes-first-pontiff-to-vote-in-us-general-election"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-10-30",
    "stories": [
     {
