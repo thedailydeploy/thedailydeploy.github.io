@@ -1,0 +1,129 @@
+{
+ "month": "2026-11",
+ "days": [
+  {
+   "date": "2026-11-02",
+   "stories": [
+    {
+     "title": "Trump is in no hurry on Iran",
+     "category": "Conflict",
+     "india": "Every day Hormuz stays shut keeps India's oil bill and fuel risk high.",
+     "sources": [
+      {
+       "outlet": "Al Jazeera",
+       "title": "Live: Araghchi says talks under way on two-day plan to reopen Hormuz",
+       "url": "https://www.aljazeera.com/news/liveblog/2026/11/1/iran-war-live-araghchi-says-talks-under-way-on-2-day-plan-to-reopen-hormuz"
+      },
+      {
+       "outlet": "Times of Israel",
+       "title": "Live, 1 Nov: Trump says US still has 'one or two sites'",
+       "url": "https://www.timesofisrael.com/liveblog-november-1-2026/"
+      },
+      {
+       "outlet": "Fox News (AP)",
+       "title": "Live: Rubio says Trump hasn't decided on strikes",
+       "url": "https://www.foxnews.com/live-news/iran-war-news-trump-us-israel-november-1"
+      },
+      {
+       "outlet": "Times of Oman (CII-EY)",
+       "title": "Crude imports still meet 90% of India's demand",
+       "url": "https://timesofoman.com/article/175339-crude-oil-imports-continue-to-meet-90-of-indias-domestic-demand-cii-ey-report"
+      }
+     ]
+    },
+    {
+     "title": "Rahul targets the election chief",
+     "category": "Politics",
+     "india": "Trust in voter rolls is now the opposition's main battle. The EC hasn't responded yet.",
+     "sources": [
+      {
+       "outlet": "The Tribune",
+       "title": "Live: INDIA bloc rally at Ramlila Maidan",
+       "url": "https://www.tribuneindia.com/electionirregularities/india-bloc-rally-live-updates-supporters-gather-at-ramlila-maidan-across-capital-ahead-of-chalo-dilli-protest"
+      }
+     ]
+    },
+    {
+     "title": "Day one of Delhi's ban: a 5 km queue",
+     "category": "India",
+     "india": "Cleaner air is the goal, but Monday's office rush is the real test.",
+     "sources": [
+      {
+       "outlet": "The Tribune",
+       "title": "NH-48 choked for hours as Delhi's BS-VI ban begins",
+       "url": "https://www.tribuneindia.com/news/gurugram/gurugram-braces-for-monday-amid-delhis-bs-vi-ban-on-vehicles-nh-48-choked-for-hours/"
+      },
+      {
+       "outlet": "The Tribune",
+       "title": "Curbs on non-BS-VI vehicles: what the rule says",
+       "url": "https://www.tribuneindia.com/news/india/curbs-on-non-bs-vi-vehicles-in-delhi-scba-seeks-top-courts-admins-intervention/"
+      }
+     ]
+    },
+    {
+     "title": "GST jumps 23% in October",
+     "category": "Economy",
+     "india": "Festive spending is feeding the taxman, giving the government room in a tough year.",
+     "sources": [
+      {
+       "outlet": "Business Today",
+       "title": "Gross GST hits ₹2.31 lakh crore in October, up 22.9%",
+       "url": "https://www.businesstoday.in/india/story/gross-gst-collections-hit-rs2-31-lakh-crore-in-october-marks-22-9-yoy-rise-on-robust-domestic-growth-564976-2026-11-01"
+      },
+      {
+       "outlet": "IANS",
+       "title": "GST collections jump nearly 23% in October",
+       "url": "https://ianslive.in/gst-collections-jump-nearly-23-pc-to-rs-231-lakh-crore-in-october--20261101132850"
+      }
+     ]
+    },
+    {
+     "title": "Festive buyers fill showrooms",
+     "category": "Business",
+     "india": "Strong car sales signal confident buyers, and more jobs and tax across the auto chain.",
+     "sources": [
+      {
+       "outlet": "Business Today",
+       "title": "Mahindra, Hyundai, Tata post record October sales",
+       "url": "https://www.businesstoday.in/auto/story/festive-boom-maruti-mahindra-tata-motors-hyundai-post-record-domestic-sales-in-october-565002-2026-11-01"
+      }
+     ]
+    },
+    {
+     "title": "Two days to the US midterms",
+     "category": "Global Politics",
+     "india": "Congress shapes US tariffs, visas and the Iran war, all of which touch India.",
+     "sources": [
+      {
+       "outlet": "Fox News",
+       "title": "Live: Trump rallies in Iowa and Kansas",
+       "url": "https://www.foxnews.com/live-news/midterm-elections-2026-trump-iowa-kansas-november-1"
+      },
+      {
+       "outlet": "Spectrum News (AP)",
+       "title": "Early voting far ahead of 2022",
+       "url": "https://spectrumlocalnews.com/us/snplus/politics/2026/10/31/trump-clinton-rally-early-voting-midterm-elections-decision-2026"
+      }
+     ]
+    },
+    {
+     "title": "India lose the last, win the series",
+     "category": "Sports",
+     "india": "A series win away from home, but two straight defeats leave questions for the bowlers.",
+     "sources": [
+      {
+       "outlet": "Sunday Guardian",
+       "title": "NZ win 5th T20I by 7 wickets; India take series 3-2",
+       "url": "https://sundayguardianlive.com/sports/india-vs-new-zealand-5th-t20i-result-tim-seiferts-93-and-glenn-phillips-record-341-runs-power-7-wicket-win-as-ind-clinch-series-3-2-full-highlights-315393/"
+      },
+      {
+       "outlet": "India TV",
+       "title": "India vs New Zealand, 5th T20I in Hamilton",
+       "url": "https://www.indiatvnews.com/sports/cricket/ind-vs-nz-5th-t20i-live-score-india-look-to-bounce-back-in-hamilton-after-minor-hiccup-1058416"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
