@@ -27,7 +27,15 @@ Live at **https://thedailydeploy.github.io** (linked from the Linktree "Sources"
 ]}
 ```
 
-2. Run `python3 build.py`.
+2. Run `python3 build.py`. It also draws the share images in `og/` (one per day, one per story) for any day that is new or changed.
 3. Commit and push. GitHub Pages publishes within a minute or two.
+
+If a day is added without running the build (for example by editing the JSON on github.com), the **Build site and share images** GitHub Action does steps 2–3 automatically.
+
+## Share images
+
+`og/` holds the 1200×630 link-preview images used on WhatsApp, Instagram, X and others.
+They are drawn by `tools/make_og.mjs` from the approved design in `tools/sharegen.js`, using the fonts in `assets/fonts/` (Archivo Black, Permanent Marker, IBM Plex — all open licences, see the LICENSE files there).
+`og/manifest.json` records what each day's images were drawn from, so a changed headline or source count redraws that day. To redraw a day by hand: `node tools/make_og.mjs --force 2026-10-31`.
 
 Stories appear in the order they're listed, which matches the carousel slide order.

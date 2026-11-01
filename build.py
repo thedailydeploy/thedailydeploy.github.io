@@ -164,8 +164,19 @@ def write(rel, html):
     p.write_text(html, encoding="utf-8")
 
 
+def make_share_images():
+    """Create share images for any day that is new or changed (tools/make_og.mjs)."""
+    import subprocess
+    try:
+        subprocess.run(["node", str(ROOT / "tools" / "make_og.mjs")], check=True)
+    except (OSError, subprocess.CalledProcessError) as err:
+        print(f"Share images skipped ({err}). Pages fall back to the logo image.")
+
+
 def main():
     days = load_days()
+    if "--no-images" not in __import__("sys").argv:
+        make_share_images()
     recent = days[:HOME_DAYS]
 
     # clear previously generated folders
