@@ -66,6 +66,12 @@ def count_sources(day):
     return sum(len(s["sources"]) for s in day["stories"])
 
 
+def asset_v(name):
+    """Short content hash, so browsers fetch a style or script again as soon as it changes."""
+    import hashlib
+    return hashlib.sha1((ROOT / "assets" / name).read_bytes()).hexdigest()[:8]
+
+
 def og_for(p):
     """Use a share image only if it has been added to og/."""
     return p if (ROOT / p.lstrip("/")).exists() else "/assets/og-image.png"
@@ -102,7 +108,7 @@ def page(title, desc, path, body, search=True, chips=None, og="/assets/og-image.
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Permanent+Marker&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css?v={asset_v("style.css")}">
 </head>
 <body>
 <div class="wrap"><a class="mast" href="/"><img class="mark" src="/assets/logo.png" width="64" height="55" alt="The Daily Deploy logo"><div><h1>THE DAILY DEPLOY <small>by SAJ</small></h1><p>Every source behind every post, sorted by day and story.</p></div></a></div>
@@ -121,7 +127,7 @@ addEventListener("hashchange",fromHash);fromHash();
 var lock=0;chips.forEach(function(c){{c.addEventListener("click",function(){{lock=Date.now()}})}});
 if("IntersectionObserver"in window){{var io=new IntersectionObserver(function(es){{if(Date.now()-lock<900)return;es.forEach(function(x){{if(x.isIntersecting)mark(x.target.getAttribute("data-date"))}})}},{{rootMargin:"-45% 0px -50% 0px"}});document.querySelectorAll(".day[data-date]").forEach(function(d){{io.observe(d)}})}}}})();
 </script>
-{'<script src="/assets/search.js" defer></script>' if search else ''}{'<script src="/assets/share.js" defer></script>' if 'data-share' in body else ''}
+{'<script src="/assets/search.js?v={asset_v("search.js")}" defer></script>' if search else ''}{'<script src="/assets/share.js?v={asset_v("share.js")}" defer></script>' if 'data-share' in body else ''}
 </body>
 </html>
 """
