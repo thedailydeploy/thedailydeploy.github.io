@@ -127,7 +127,7 @@ addEventListener("hashchange",fromHash);fromHash();
 var lock=0;chips.forEach(function(c){{c.addEventListener("click",function(){{lock=Date.now()}})}});
 if("IntersectionObserver"in window){{var io=new IntersectionObserver(function(es){{if(Date.now()-lock<900)return;es.forEach(function(x){{if(x.isIntersecting)mark(x.target.getAttribute("data-date"))}})}},{{rootMargin:"-45% 0px -50% 0px"}});document.querySelectorAll(".day[data-date]").forEach(function(d){{io.observe(d)}})}}}})();
 </script>
-{'<script src="/assets/search.js?v={asset_v("search.js")}" defer></script>' if search else ''}{'<script src="/assets/share.js?v={asset_v("share.js")}" defer></script>' if 'data-share' in body else ''}
+{('<script src="/assets/search.js?v=' + asset_v("search.js") + '" defer></script>') if search else ''}{('<script src="/assets/share.js?v=' + asset_v("share.js") + '" defer></script>') if 'data-share' in body else ''}
 </body>
 </html>
 """
