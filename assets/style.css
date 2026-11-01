@@ -114,6 +114,8 @@ footer a{color:var(--lime)}
 .story .top .share{margin-left:auto;color:var(--paper-ink)}
 .story .top .share:hover{border-color:var(--paper-ink)}
 .dayhead .share{color:var(--lime);border-color:var(--lime)}
+.dayhead .share:hover,.dayhead .share:focus-visible,.story .top .share:hover,.story .top .share:focus-visible{background:var(--lime);color:var(--ink);border-color:var(--ink)}
+.share[aria-busy=true]{opacity:.6;cursor:progress}
 .sharepop{position:absolute;z-index:20;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px;display:flex;flex-direction:column;min-width:170px;box-shadow:0 10px 28px rgba(0,0,0,.55)}
 .sharepop a,.sharepop button{display:block;text-align:left;padding:10px 12px;border-radius:6px;background:none;border:0;color:var(--paper);font:inherit;font-size:14px;text-decoration:none;cursor:pointer}
 .sharepop a:hover,.sharepop button:hover,.sharepop a:focus-visible,.sharepop button:focus-visible{background:#26251f;color:var(--lime)}

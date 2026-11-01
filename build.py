@@ -137,7 +137,7 @@ def render_day(day, link_heading=True):
     if link_heading:
         head = f'<a href="{dpath(day["date"])}">{head}</a>'
     out = [f'<section class="day" id="d-{day["date"]}" data-date="{day["date"]}">',
-           f'<div class="dayhead"><h2>{head}</h2><span>{n_st} {"story" if n_st == 1 else "stories"} · {n_src} sources</span><button type="button" class="share" data-share data-url="{SITE}{dpath(day["date"])}" data-title="{e("The Daily Deploy · " + long_date(day["date"]))}">{SHARE_ICON}Share day</button></div>']
+           f'<div class="dayhead"><h2>{head}</h2><span>{n_st} {"story" if n_st == 1 else "stories"} · {n_src} sources</span><button type="button" class="share" data-share data-url="{SITE}{dpath(day["date"])}" data-img="/og/{day["date"]}.png" data-title="{e("The Daily Deploy · " + long_date(day["date"]))}">{SHARE_ICON}Share day</button></div>']
     for i, s in enumerate(day["stories"], 1):
         out.append(story_html(day, i, s))
     out.append("</section>")
@@ -150,7 +150,7 @@ def story_html(day, i, s):
         links = "".join(
             f'<li><a href="{e(x["url"])}" target="_blank" rel="noopener"><span class="o">{e(x["outlet"])}</span><span class="t">{e(x.get("title") or x["url"])}</span><span class="arr" aria-hidden="true">↗</span></a></li>'
             for x in s["sources"])
-        return f'<article class="story" id="s-{i:02d}"><div class="top"><span class="num">STORY {i:02d}</span>{cat}<button type="button" class="share" data-share data-url="{SITE}{dpath(day["date"])}{i:02d}/" data-title="{e(s["title"])}">{SHARE_ICON}Share</button></div><h3>{e(s["title"])}</h3>{why}<ul class="srcs">{links}</ul></article>'
+        return f'<article class="story" id="s-{i:02d}"><div class="top"><span class="num">STORY {i:02d}</span>{cat}<button type="button" class="share" data-share data-url="{SITE}{dpath(day["date"])}{i:02d}/" data-img="/og/{day["date"]}-{i:02d}.png" data-title="{e(s["title"])}">{SHARE_ICON}Share</button></div><h3>{e(s["title"])}</h3>{why}<ul class="srcs">{links}</ul></article>'
 
 
 def chips_html(recent, current=None):
