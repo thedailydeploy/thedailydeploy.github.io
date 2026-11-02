@@ -2,6 +2,123 @@
  "month": "2026-11",
  "days": [
   {
+   "date": "2026-11-02",
+   "stories": [
+    {
+     "title": "A second cyclone heads for the Andhra coast",
+     "category": "Climate",
+     "india": "Two storms in a week strain coastal farms, power lines and relief budgets.",
+     "sources": [
+      {
+       "outlet": "Down To Earth",
+       "title": "Cyclone Murasu threatens Andhra days after Arnab",
+       "url": "https://www.downtoearth.org.in/climate-change/cyclone-murasu-threatens-andhra-pradesh-days-after-arnab-leaves-seven-dead"
+      },
+      {
+       "outlet": "Xinhua",
+       "title": "Cyclone Murasu nears India's east coast",
+       "url": "https://english.news.cn/20261102/027c5d46cadb407889e52dd64c120592/c.html"
+      },
+      {
+       "outlet": "Vajiram & Ravi",
+       "title": "Cyclone Murasu 2026 explained",
+       "url": "https://vajiramandravi.com/current-affairs/cyclone-murasu-2026/"
+      }
+     ]
+    },
+    {
+     "title": "Trump plays for time, oil slides",
+     "category": "Conflict",
+     "india": "Cheaper crude eases India's import bill, but one strike could reverse it.",
+     "sources": [
+      {
+       "outlet": "Al Jazeera",
+       "title": "Live: tankers hit in Hormuz, Trump says war to end soon",
+       "url": "https://www.aljazeera.com/news/liveblog/2026/11/2/iran-war-live-tankers-hit-in-hormuz-trump-again-says-conflict-to-end-soon"
+      },
+      {
+       "outlet": "The National",
+       "title": "Oil slides more than 3% as Trump signals more time for diplomacy",
+       "url": "https://www.thenationalnews.com/business/2026/11/02/oil-prices-slide-more-than-3-as-trump-signals-more-time-for-iran-diplomacy/"
+      },
+      {
+       "outlet": "Euronews",
+       "title": "Oil slides on Hormuz deal hopes, strikes still on the table",
+       "url": "https://www.euronews.com/2026/11/02/oil-slides-on-hormuz-deal-hopes-but-trump-keeps-iran-strikes-on-the-table"
+      },
+      {
+       "outlet": "ABC News",
+       "title": "Live: UKMTO reports more ships hit",
+       "url": "https://abcnews.com/International/live-updates/iran-live-updates-trump-good-call-netanyahu/?id=137762456"
+      }
+     ]
+    },
+    {
+     "title": "Reliance adds a record $19 billion",
+     "category": "Markets",
+     "india": "The Iran war's fuel squeeze is a windfall for India's biggest refiner.",
+     "sources": [
+      {
+       "outlet": "Business Today",
+       "title": "Reliance shares surge, biggest single-day gain since April 2020",
+       "url": "https://www.businesstoday.in/markets/stocks/story/reliance-industries-shares-surge-12-biggest-single-day-gain-since-april-2020-565200-2026-11-02"
+      },
+      {
+       "outlet": "Bloomberg via Yahoo Finance",
+       "title": "Reliance adds a record $19 billion",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/reliance-adds-record-19-billion-111336617.html"
+      },
+      {
+       "outlet": "Kotak Neo",
+       "title": "Markets extend rally and end higher",
+       "url": "https://www.kotakneo.com/news/market-news/markets-extend-rally-and-end-higher/"
+      }
+     ]
+    },
+    {
+     "title": "UP's voter list shrinks by 2 crore",
+     "category": "Politics",
+     "india": "Deletions on this scale are at the heart of the opposition's voter-roll fight.",
+     "sources": [
+      {
+       "outlet": "ThePrint (PTI)",
+       "title": "Post-SIR voter base in 5 poll-bound states shrank by up to 13.24%",
+       "url": "https://theprint.in/india/post-sir-voter-base-in-5-poll-bound-states-shrank-by-up-to-13-24-per-cent/3088225/"
+      }
+     ]
+    },
+    {
+     "title": "Factories slow, exports speed up",
+     "category": "Economy",
+     "india": "Softer price rises mean less pressure on inflation, and on what you pay.",
+     "sources": [
+      {
+       "outlet": "ANI",
+       "title": "Manufacturing PMI eases to 54.7, export orders hit six-month high",
+       "url": "https://aninews.in/news/business/indias-manufacturing-pmi-eases-to-547-in-october-export-orders-hit-six-month-high20261102111017/"
+      }
+     ]
+    },
+    {
+     "title": "US midterms: the final push",
+     "category": "Global Politics",
+     "india": "Congress shapes US tariffs, visas and the Iran war, all of which touch India.",
+     "sources": [
+      {
+       "outlet": "Spectrum News",
+       "title": "Trump's Reflecting Pool speech; Democrats seek unity",
+       "url": "https://spectrumlocalnews.com/nc/triad/politics/2026/11/02/midterm-election-president-donald-trump-reflecting-pool-speech-democrats-seek-unity-haley-stevens"
+      },
+      {
+       "outlet": "AP via ClickOnDetroit",
+       "title": "The latest: a final push one day before the midterms",
+       "url": "https://www.clickondetroit.com/news/politics/2026/11/02/the-latest-democrats-and-republicans-make-a-final-push-one-day-before-midterm-elections/"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-01",
    "stories": [
     {
