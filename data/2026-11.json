@@ -2,6 +2,137 @@
  "month": "2026-11",
  "days": [
   {
+   "date": "2026-11-03",
+   "stories": [
+    {
+     "title": "Cyclone Murasu's first damage bill",
+     "category": "Climate",
+     "india": "A second storm in a week: farm incomes and power repairs now top Andhra's list.",
+     "sources": [
+      {
+       "outlet": "National Herald (PTI)",
+       "title": "Murasu kills two, damages crops across 52,000 hectares",
+       "url": "https://www.nationalheraldindia.com/national/cyclone-murasu-kills-two-in-andhra-pradesh-damages-crops-across-52000-hectares"
+      },
+      {
+       "outlet": "ThePrint (PTI)",
+       "title": "Murasu landfall begins, 120 km/h winds batter Andhra coast",
+       "url": "https://theprint.in/india/cyclone-murasu-landfall-begins-heavy-rain-120-kmph-winds-batter-andhra-coast/3088740/"
+      }
+     ]
+    },
+    {
+     "title": "US strikes Qeshm, talks go on",
+     "category": "Conflict",
+     "india": "Strikes and peace talks now run together, and both move India's fuel bill.",
+     "sources": [
+      {
+       "outlet": "Al Jazeera",
+       "title": "US hits Qeshm Island as Pezeshkian signals more diplomacy",
+       "url": "https://www.aljazeera.com/news/2026/11/3/us-hits-qeshm-island-pezeshkian-signals-more-diplomacy-iran-war-latest"
+      },
+      {
+       "outlet": "Just Security",
+       "title": "Early Edition, 3 November 2026",
+       "url": "https://www.justsecurity.org/163177/early-edition-november-3-2026/"
+      },
+      {
+       "outlet": "Kotak Neo",
+       "title": "Oil and markets: Sensex, Nifty extend winning streak",
+       "url": "https://www.kotakneo.com/news/market-news/sensex-nifty-50-extend-winning-streak/"
+      }
+     ]
+    },
+    {
+     "title": "America votes in a $12 billion midterm",
+     "category": "Global Politics",
+     "india": "First polls close 4:30 AM IST Wednesday; Congress shapes US tariffs and visas.",
+     "sources": [
+      {
+       "outlet": "ABC News",
+       "title": "Live: midterm elections updates",
+       "url": "https://abcnews.com/Politics/live-updates/midterm-elections-live-updates/?id=137782085"
+      },
+      {
+       "outlet": "AP via KPBS",
+       "title": "Supreme Court rejects push to set aside California ballots",
+       "url": "https://www.kpbs.org/news/politics/2026/11/02/supreme-court-rejects-trump-administration-push-to-set-aside-thousands-of-california-ballots"
+      }
+     ]
+    },
+    {
+     "title": "Delhi's air turns very poor",
+     "category": "India",
+     "india": "Diwali smoke will land on air that is already very poor.",
+     "sources": [
+      {
+       "outlet": "Business Standard",
+       "title": "Delhi AQI climbs to 331, GRAP-II curbs enforced",
+       "url": "https://www.business-standard.com/india-news/delhi-s-air-quality-worsens-as-aqi-climbs-to-331-grap-ii-curbs-enforced-126110300111_1.html"
+      }
+     ]
+    },
+    {
+     "title": "Sensex rises for a 4th day",
+     "category": "Markets",
+     "india": "Indian stocks are rising while Asian tech shares slide on AI worries.",
+     "sources": [
+      {
+       "outlet": "Kotak Neo",
+       "title": "Sensex, Nifty 50 extend winning streak",
+       "url": "https://www.kotakneo.com/news/market-news/sensex-nifty-50-extend-winning-streak/"
+      }
+     ]
+    },
+    {
+     "title": "SBI's profit rises 14%",
+     "category": "Business",
+     "india": "A healthier biggest lender supports loans for homes, cars and businesses.",
+     "sources": [
+      {
+       "outlet": "Business Standard",
+       "title": "SBI Q2 FY27: net profit, NII, provisions and asset quality",
+       "url": "https://www.business-standard.com/companies/quarterly-results/sbi-q2-fy27-net-profit-nii-provisions-asset-quality-126110300887_1.html"
+      }
+     ]
+    },
+    {
+     "title": "AI fears sink Seoul's chip giants",
+     "category": "Tech",
+     "india": "If the AI trade cracks, global money moves fast, into India or out of risk.",
+     "sources": [
+      {
+       "outlet": "Korea JoongAng Daily",
+       "title": "KOSPI dips over 3% on escalating AI concerns",
+       "url": "https://www.koreajoongangdaily.com/business/kospi-dips-over-3-following-escalating-ai-concerns/12953462"
+      }
+     ]
+    },
+    {
+     "title": "Bangladesh's garment hub stalls",
+     "category": "South Asia",
+     "india": "Bangladesh is India's big garment rival; long shutdowns can shift orders.",
+     "sources": [
+      {
+       "outlet": "Bloomberg",
+       "title": "Bangladesh garment workers halt production in wage protests",
+       "url": "https://www.bloomberg.com/news/articles/2026-11-03/bangladesh-garment-workers-halt-production-in-wage-protests"
+      },
+      {
+       "outlet": "Al Jazeera",
+       "title": "Garment factories disrupted as protests continue",
+       "url": "https://www.aljazeera.com/news/2026/11/2/bangladesh-garment-factories-disrupted-as-protests-continue-for-third-day"
+      },
+      {
+       "outlet": "Arab News",
+       "title": "Worker unrest shuts hundreds of garment factories",
+       "url": "https://www.arabnews.com/world/worker-unrest-shuts-hundreds-of-garment-factories-in-bangladesh-3009385"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-02",
    "stories": [
     {
