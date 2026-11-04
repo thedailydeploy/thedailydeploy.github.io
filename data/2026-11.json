@@ -2,6 +2,147 @@
  "month": "2026-11",
  "days": [
   {
+   "date": "2026-11-04",
+   "stories": [
+    {
+     "title": "Democrats take both houses of Congress",
+     "category": "Global Politics",
+     "india": "From budgets to investigations, Trump now faces a Congress run by his rivals.",
+     "sources": [
+      {
+       "outlet": "CBS News",
+       "title": "Live: Election Day 2026 midterms",
+       "url": "https://www.cbsnews.com/live-updates/election-day-2026-midterms/"
+      },
+      {
+       "outlet": "Time",
+       "title": "Midterm elections 2026: key races and live results",
+       "url": "https://time.com/article/2026/11/03/midterm-elections-2026-key-races-live-results-polls-latest-news-updates/"
+      }
+     ]
+    },
+    {
+     "title": "Iran says America voted no to war",
+     "category": "Conflict",
+     "india": "Every Hormuz flare-up reaches India's fuel bill and its sailors at sea.",
+     "sources": [
+      {
+       "outlet": "Gulf News",
+       "title": "Trump warns of heavy hit as Iran says Americans voted no to war",
+       "url": "https://gulfnews.com/world/mena/middle-east-conflict-trump-warns-of-heavy-hit-as-iran-says-americans-voted-no-to-war-1.500735100"
+      },
+      {
+       "outlet": "Middle East Eye",
+       "title": "IRGC says four tankers ablaze after hitting mines (unverified)",
+       "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-irgc-says-four-tankers-ablaze-after-hitting-mines-hormuz-strait"
+      }
+     ]
+    },
+    {
+     "title": "Israel finds no vote fraud",
+     "category": "Geopolitics",
+     "india": "If no one reaches 61, Israel faces another election early next year.",
+     "sources": [
+      {
+       "outlet": "Al Jazeera",
+       "title": "Israel vote results confirmed as commission rejects fraud claims",
+       "url": "https://www.aljazeera.com/news/2026/11/4/israel-vote-results-confirmed-as-election-commission-rejects-fraud-claims"
+      },
+      {
+       "outlet": "Times of Israel",
+       "title": "Election chief: casting doubt on results a real danger to democracy",
+       "url": "https://www.timesofisrael.com/election-chief-presents-results-to-president-says-casting-doubt-on-them-a-real-danger-to-democracy/"
+      }
+     ]
+    },
+    {
+     "title": "Sensex rises for a fifth day",
+     "category": "Markets",
+     "india": "Indian stocks keep rising even as US politics and AI worries rattle Asia.",
+     "sources": [
+      {
+       "outlet": "HDFC Sky",
+       "title": "Market close, 4 Nov: the rally continues",
+       "url": "https://hdfcsky.com/news/market-close-report-today-november-4-2026-diwali-party-continues-as-democrats-seize-congress-in-blow-for-trump"
+      },
+      {
+       "outlet": "Kotak Neo",
+       "title": "Markets end higher after a range-bound session",
+       "url": "https://www.kotakneo.com/news/market-news/markets-end-higher-after-range-bound-session/"
+      }
+     ]
+    },
+    {
+     "title": "A blue Congress spooks AI stocks",
+     "category": "Tech",
+     "india": "The AI trade moves global money, into and out of India's markets.",
+     "sources": [
+      {
+       "outlet": "IndexBox",
+       "title": "Nikkei closes down 1.42% at 62,188.63",
+       "url": "https://www.indexbox.io/blog/nikkei-closes-down-142-at-6218863-as-jgb-yields-rise-after-trump-midterm-remarks/"
+      },
+      {
+       "outlet": "TradingKey",
+       "title": "AMD surges after hours on record revenue",
+       "url": "https://tradingkey.com/analysis/stocks/us-stocks/262271579-amd-surge-after-hours-ai-rebound-nasdaq-midterm-elections-tradingkey"
+      }
+     ]
+    },
+    {
+     "title": "SC: two-child laws lost relevance",
+     "category": "India",
+     "india": "Rules that keep parents of three-plus children off local ballots may be revisited.",
+     "sources": [
+      {
+       "outlet": "The Week",
+       "title": "Two-child norm laws have lost relevance, SC says",
+       "url": "https://www.theweek.in/news/india/2026/11/04/two-child-norm-laws-lost-relevance-sc-says-amid-drop-in-indias-fertility-rate.html"
+      },
+      {
+       "outlet": "ETV Bharat",
+       "title": "SC flags population decline, says two-child laws lost relevance",
+       "url": "https://www.etvbharat.com/en/bharat/supreme-court-flags-population-decline-says-two-child-norm-laws-have-lost-relevance-enn26110402368"
+      }
+     ]
+    },
+    {
+     "title": "Delhi's worst air since January",
+     "category": "Climate",
+     "india": "Air this bad harms everyone's lungs, and the worst is forecast for the weekend.",
+     "sources": [
+      {
+       "outlet": "National Herald",
+       "title": "Delhi AQI 377, worst in 288 days",
+       "url": "https://www.nationalheraldindia.com/national/delhi-aqi-377-worst-in-288-days-pollution-stubble-burning"
+      },
+      {
+       "outlet": "India.com",
+       "title": "Delhi chokes as severe pollution grips the capital",
+       "url": "https://www.india.com/news/india/delhi-chokes-again-as-severe-pollution-grips-capital-aqi-crosses-400-in-several-areas-jahangirpuri-alipur-among-worst-hit-latest-update-nov-4-8541992/"
+      }
+     ]
+    },
+    {
+     "title": "Bangladesh agrees to a pay rise",
+     "category": "South Asia",
+     "india": "Higher pay in Dhaka changes costs for India's biggest garment-export rival.",
+     "sources": [
+      {
+       "outlet": "Deccan Chronicle",
+       "title": "Bangladesh agrees to raise garment minimum pay after protests",
+       "url": "https://www.deccanchronicle.com/world/neighbours/bangladesh-agrees-to-increase-garment-sector-minimum-pay-after-protests-2001645"
+      },
+      {
+       "outlet": "ABC News (AP)",
+       "title": "Garment factories close as workers clash with police over pay",
+       "url": "https://abcnews.com/International/wireStory/bangladesh-garment-factories-close-workers-clash-police-pay-137843912"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-03",
    "stories": [
     {
