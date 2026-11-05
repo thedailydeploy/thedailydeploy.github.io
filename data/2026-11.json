@@ -2,6 +2,132 @@
  "month": "2026-11",
  "days": [
   {
+   "date": "2026-11-05",
+   "stories": [
+    {
+     "title": "Sensex soars 2,000 points",
+     "category": "Markets",
+     "india": "Cheaper oil and returning foreign money are lifting Indian stocks before Diwali.",
+     "sources": [
+      {
+       "outlet": "HDFC Sky",
+       "title": "Market close, 5 Nov: Nifty, Sensex post blockbuster gains",
+       "url": "https://hdfcsky.com/news/market-close-report-today-november-5-2026-nifty-sensex-post-blockbuster-gains-as-stocks-continue-to-celebrate-diwali"
+      }
+     ]
+    },
+    {
+     "title": "Iran says tankers ablaze",
+     "category": "Conflict",
+     "india": "Every Hormuz flare-up reaches India's fuel bill and Indian sailors at sea.",
+     "sources": [
+      {
+       "outlet": "ThePrint (Reuters)",
+       "title": "IRGC says two tankers and a tugboat caught fire (unverified)",
+       "url": "https://theprint.in/world/irans-irgc-says-two-tankers-and-tugboat-caught-fire-in-strait-of-hormuz/3091013/"
+      },
+      {
+       "outlet": "Al Jazeera",
+       "title": "Live: Khamenei says US hostility will persist",
+       "url": "https://www.aljazeera.com/news/liveblog/2026/11/5/iran-war-live-trump-admits-war-caused-election-loss-but-had-to-do-it"
+      }
+     ]
+    },
+    {
+     "title": "Eisenkot gets 67 endorsements",
+     "category": "Geopolitics",
+     "india": "Israel could get its first government not led by Netanyahu since 2022, mid-war.",
+     "sources": [
+      {
+       "outlet": "JFeed",
+       "title": "Joint List backs Eisenkot for prime minister",
+       "url": "https://www.jfeed.com/news-israel/to1i0c"
+      },
+      {
+       "outlet": "Just Security (Reuters)",
+       "title": "Early Edition, 5 November 2026: Herzog's deadline",
+       "url": "https://www.justsecurity.org/163503/early-edition-november-5-2026/"
+      }
+     ]
+    },
+    {
+     "title": "Mississippi's Senate race: 1,138 votes",
+     "category": "Global Politics",
+     "india": "A Colom win would hand Democrats a Senate seat in deep-red Mississippi.",
+     "sources": [
+      {
+       "outlet": "WDAM",
+       "title": "Colom leads Hyde-Smith on day three of counting",
+       "url": "https://www.wdam.com/2026/11/05/colom-leads-senate-race-against-hyde-smith-day-3-ballot-counting/"
+      },
+      {
+       "outlet": "Magnolia Tribune",
+       "title": "Colom extends lead with thousands of ballots still to count",
+       "url": "https://magnoliatribune.com/2026/11/05/colom-extends-lead-over-hyde-smith-with-thousands-of-affidavit-and-mail-in-absentee-ballots-to-be-counted/"
+      }
+     ]
+    },
+    {
+     "title": "KOSPI crashes 5% as AI chips tumble",
+     "category": "Tech",
+     "india": "US politics just hit Asia's AI trade hard, while Indian stocks rallied.",
+     "sources": [
+      {
+       "outlet": "Korea JoongAng Daily",
+       "title": "KOSPI sinks as US blue tsunami soaks Korean tech shares",
+       "url": "https://www.koreajoongangdaily.com/business/kospi-sinks-below-the-waves-as-us-blue-tsunami-soaks-korean-tech-shares/12958434"
+      },
+      {
+       "outlet": "AP via ClickOnDetroit",
+       "title": "Asian shares mostly advance; KOSPI falls on chipmaker selling",
+       "url": "https://www.clickondetroit.com/business/2026/11/05/asian-shares-mostly-advance-following-us-midterms-though-kospi-falls-on-selling-of-chipmakers/"
+      }
+     ]
+    },
+    {
+     "title": "France strikes over wages and prices",
+     "category": "Politics",
+     "india": "Unrest in the EU's second-largest economy, six months before France picks Macron's successor.",
+     "sources": [
+      {
+       "outlet": "AP via KSAT",
+       "title": "French unions unite for nationwide strikes",
+       "url": "https://www.ksat.com/business/2026/11/05/french-unions-unite-for-nationwide-strikes-piling-more-pressure-on-macrons-government/"
+      },
+      {
+       "outlet": "Euronews",
+       "title": "Up to 55,000 march in Lyon amid clashes and tear gas",
+       "url": "https://www.euronews.com/video/2026/11/05/france-up-to-55000-march-in-lyon-amid-clashes-and-tear-gas"
+      }
+     ]
+    },
+    {
+     "title": "India preps for Nepal PM's visit",
+     "category": "India",
+     "india": "Nepal is a vital neighbour, and Shah's visit could set the tone for ties.",
+     "sources": [
+      {
+       "outlet": "Deccan Chronicle (PTI)",
+       "title": "Misri meets Nepal PM Balendra Shah, discusses ties",
+       "url": "https://www.deccanchronicle.com/world/neighbours/misri-meets-nepal-pm-balendra-shah-discusses-bilateral-ties-2001925"
+      }
+     ]
+    },
+    {
+     "title": "Ronaldo quits Portugal",
+     "category": "Sport",
+     "india": "The men's record holder for international goals and caps hands back the No. 7 shirt.",
+     "sources": [
+      {
+       "outlet": "ESPN",
+       "title": "Cristiano Ronaldo retires from international football",
+       "url": "https://www.espn.com/soccer/story/_/id/49266866/cristiano-ronaldo-portugal-jorge-jesus-retires-international"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-11-04",
    "stories": [
     {
