@@ -48,6 +48,46 @@ def load_days():
     return days
 
 
+def load_explainers():
+    """Evergreen explainer Reels and their sources (data/explainers.json), newest first."""
+    f = ROOT / "data" / "explainers.json"
+    if not f.exists():
+        return []
+    items = json.loads(f.read_text(encoding="utf-8"))["explainers"]
+    seen = set()
+    for x in items:
+        date.fromisoformat(x["date"])
+        if x["slug"] in seen or not re.fullmatch(r"[a-z0-9-]+", x["slug"]):
+            raise SystemExit(f"Bad or duplicate explainer slug {x['slug']}")
+        seen.add(x["slug"])
+    return sorted(items, key=lambda x: x["date"], reverse=True)
+
+
+def xpath(x):
+    return f"/explainers/{x['slug']}/"
+
+
+def explainer_html(x, link=True):
+    title = f'<a href="{xpath(x)}">{e(x["title"])}</a>' if link else e(x["title"])
+    links = "".join(
+        f'<li><a href="{e(s["url"])}" target="_blank" rel="noopener"><span class="o">{e(s["outlet"])}</span><span class="t">{e(s.get("title") or s["url"])}</span><span class="arr" aria-hidden="true">↗</span></a></li>'
+        for s in x["sources"])
+    reel = f' · <a href="{e(x["reel"])}" target="_blank" rel="noopener">Watch the Reel ↗</a>' if x.get("reel") else ""
+    credits = f'<p class="credits">{e(x["credits"])}</p>' if x.get("credits") else ""
+    return (f'<article class="story xpl" id="x-{e(x["slug"])}"><div class="top"><span class="num">REEL · {e(short_date(x["date"]))} {x["date"][:4]}{reel}</span>'
+            f'<span class="cat">{e(x["series"])}</span><button type="button" class="share" data-share data-url="{SITE}{xpath(x)}" data-img="/assets/og-image.png" data-title="{e(x["title"])}">{SHARE_ICON}Share</button></div>'
+            f'<h3>{title}</h3><p class="why">{e(x["summary"])}</p><ul class="srcs">{links}</ul>{credits}</article>')
+
+
+def corner_html(xs):
+    """The explainers corner on the home page: latest three, linking to the full list."""
+    if not xs:
+        return ""
+    items = "".join(f'<li><a href="{xpath(x)}"><span class="cs">{e(x["series"])}</span><b>{e(x["title"])}</b><span class="cn">{len(x["sources"])} sources ↗</span></a></li>' for x in xs[:3])
+    return (f'<aside class="corner" aria-label="Explainer Reels sources"><div class="chead"><h2>Explainer Reels</h2><span>Sources for every evergreen explainer</span></div>'
+            f'<ul>{items}</ul><a class="call" href="/explainers/">All explainers →</a></aside>')
+
+
 def dpath(iso):
     return "/" + iso.replace("-", "/") + "/"
 
@@ -116,7 +156,7 @@ def page(title, desc, path, body, search=True, chips=None, og="/assets/og-image.
 <main class="wrap">
 {body}
 </main>
-<div class="wrap"><footer><span>Sources are added each morning when the day's carousel goes live at <b>8:30 AM IST</b>.</span><span><a href="/">Latest</a> · <a href="/archive/">Archive</a> · <a href="https://www.instagram.com/dailydeploybysaj/">@dailydeploybysaj</a></span></footer></div>
+<div class="wrap"><footer><span>Sources are added each morning when the day's carousel goes live at <b>8:30 AM IST</b>.</span><span><a href="/">Latest</a> · <a href="/explainers/">Explainers</a> · <a href="/archive/">Archive</a> · <a href="https://www.instagram.com/dailydeploybysaj/">@dailydeploybysaj</a></span></footer></div>
 <script>
 (function(){{var t=new Date(Date.now()+19800000).toISOString().slice(0,10);document.querySelectorAll("[data-date='"+t+"'] .dayhead h2").forEach(function(h){{var s=document.createElement("span");s.className="today";s.textContent="today";h.appendChild(s)}});document.querySelectorAll(".chip[data-d='"+t+"']").forEach(function(c){{c.textContent="Today"}})}})();
 (function(){{var chips=[].slice.call(document.querySelectorAll('.chip[href^="#d-"]'));if(!chips.length)return;
@@ -181,20 +221,21 @@ def make_share_images():
 
 def main():
     days = load_days()
+    xs = load_explainers()
     if "--no-images" not in __import__("sys").argv:
         make_share_images()
     recent = days[:HOME_DAYS]
 
     # clear previously generated folders
     for p in ROOT.iterdir():
-        if p.is_dir() and (re.fullmatch(r"\d{4}", p.name) or p.name == "archive"):
+        if p.is_dir() and (re.fullmatch(r"\d{4}", p.name) or p.name in ("archive", "explainers")):
             shutil.rmtree(p)
 
     urls = ["/", "/archive/"]
 
     # home
     if days:
-        body = "".join(render_day(d) for d in recent)
+        body = corner_html(xs) + "".join(render_day(d) for d in recent)
         if len(days) > HOME_DAYS:
             body += '<a class="more" href="/archive/">Older days are in the archive →</a>'
         home_chips = "".join(f'<a class="chip" data-d="{d["date"]}" href="#d-{d["date"]}">{short_date(d["date"])}</a>' for d in recent) + '<a class="chip arch" href="/archive/">Archive</a>'
@@ -234,6 +275,31 @@ def main():
                   page(f'{s["title"]} · The Daily Deploy', desc, f"{dp}{k:02d}/", sbody, chips=chips_html(recent, d["date"]), og=og_for(f'/og/{d["date"]}-{k:02d}.png')))
             urls.append(f"{dp}{k:02d}/")
 
+    # explainer pages
+    if xs:
+        by_series = {}
+        for x in xs:
+            by_series.setdefault(x["series"], []).append(x)
+        blocks = "".join(f'<section class="day"><div class="dayhead"><h2>{e(sr)}</h2><span>{len(lst)} {"explainer" if len(lst) == 1 else "explainers"}</span></div>' + "".join(explainer_html(x) for x in lst) + "</section>" for sr, lst in by_series.items())
+        body = (f'<h2 class="ptitle">Explainer Reels</h2><p class="psub">Evergreen explainers from The Daily Deploy, and every source behind them. {len(xs)} {"explainer" if len(xs) == 1 else "explainers"} · {sum(len(x["sources"]) for x in xs)} sources</p>' + blocks)
+    else:
+        body = '<section class="empty-state"><h2>No explainers yet</h2><p>Sources for each explainer Reel appear here when it is posted.</p></section>'
+    write("explainers/index.html", page("Explainer Reels · Sources · The Daily Deploy", "Every source behind The Daily Deploy's evergreen explainer Reels.", "/explainers/", body, chips=chips_html(recent)))
+    urls.append("/explainers/")
+    for i, x in enumerate(xs):
+        newer = xs[i - 1] if i > 0 else None
+        older = xs[i + 1] if i + 1 < len(xs) else None
+        pager = '<nav class="pager" aria-label="Other explainers">'
+        pager += f'<a href="{xpath(older)}">← Older explainer</a>' if older else '<a href="/explainers/">← All explainers</a>'
+        pager += f'<a href="{xpath(newer)}">Newer explainer →</a>' if newer else '<a href="/explainers/">All explainers →</a>'
+        pager += "</nav>"
+        if not older and not newer:
+            pager = '<nav class="pager" aria-label="Other explainers"><a href="/explainers/">← All explainers</a></nav>'
+        xbody = (f'<p class="psub"><a href="/explainers/">Explainer Reels</a> / {e(x["series"])}</p>'
+                 f'<section class="day">{explainer_html(x, link=False)}</section>{pager}')
+        write(f'explainers/{x["slug"]}/index.html', page(f'{x["title"]} · Sources · The Daily Deploy', x["summary"][:155], xpath(x), xbody, chips=chips_html(recent)))
+        urls.append(xpath(x))
+
     # month pages
     by_month = {}
     for d in days:
@@ -271,12 +337,15 @@ def main():
             outlets = " · ".join(dict.fromkeys(x["outlet"] for x in s["sources"]))
             extra = " ".join([s.get("india", "")] + [x.get("title", "") for x in s["sources"]])
             rows.append([d["date"], i, s["title"], s.get("category", ""), outlets, extra])
+    for x in xs:
+        outlets = " · ".join(dict.fromkeys(s["outlet"] for s in x["sources"]))
+        rows.append([x["date"], 0, x["title"], x["series"], outlets, x["summary"] + " " + " ".join(s.get("title", "") for s in x["sources"]), xpath(x)])
     write("data/search.json", json.dumps(rows, ensure_ascii=False, separators=(",", ":")))
 
     write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"<url><loc>{SITE}{u}</loc></url>\n" for u in urls) + "</urlset>\n")
     write("robots.txt", f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
     write(".nojekyll", "")
-    print(f"Built {len(days)} days, {len(by_month)} months, {len(rows)} stories.")
+    print(f"Built {len(days)} days, {len(by_month)} months, {len(rows) - len(xs)} stories, {len(xs)} explainer{"" if len(xs) == 1 else "s"}.")
 
 
 if __name__ == "__main__":

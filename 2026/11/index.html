@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Permanent+Marker&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="/assets/style.css?v=0e63e918">
+<link rel="stylesheet" href="/assets/style.css?v=d7548fd5">
 </head>
 <body>
 <div class="wrap"><a class="mast" href="/"><img class="mark" src="/assets/logo.png" width="64" height="55" alt="The Daily Deploy logo"><div><h1>THE DAILY DEPLOY <small>by SAJ</small></h1><p>Every source behind every post, sorted by day and story.</p></div></a></div>
@@ -27,7 +27,7 @@
 <main class="wrap">
 <p class="psub"><a href="/archive/">Archive</a> / 2026</p><h2 class="ptitle">November 2026</h2><p class="psub">4 days · 29 stories</p><ul class="daylist"><li><a href="/2026/11/04/"><b>Wednesday, 4 November</b><span>8 stories · 16 sources</span></a></li><li><a href="/2026/11/03/"><b>Tuesday, 3 November</b><span>8 stories · 14 sources</span></a></li><li><a href="/2026/11/02/"><b>Monday, 2 November</b><span>6 stories · 14 sources</span></a></li><li><a href="/2026/11/01/"><b>Sunday, 1 November</b><span>7 stories · 14 sources</span></a></li></ul>
 </main>
-<div class="wrap"><footer><span>Sources are added each morning when the day's carousel goes live at <b>8:30 AM IST</b>.</span><span><a href="/">Latest</a> · <a href="/archive/">Archive</a> · <a href="https://www.instagram.com/dailydeploybysaj/">@dailydeploybysaj</a></span></footer></div>
+<div class="wrap"><footer><span>Sources are added each morning when the day's carousel goes live at <b>8:30 AM IST</b>.</span><span><a href="/">Latest</a> · <a href="/explainers/">Explainers</a> · <a href="/archive/">Archive</a> · <a href="https://www.instagram.com/dailydeploybysaj/">@dailydeploybysaj</a></span></footer></div>
 <script>
 (function(){var t=new Date(Date.now()+19800000).toISOString().slice(0,10);document.querySelectorAll("[data-date='"+t+"'] .dayhead h2").forEach(function(h){var s=document.createElement("span");s.className="today";s.textContent="today";h.appendChild(s)});document.querySelectorAll(".chip[data-d='"+t+"']").forEach(function(c){c.textContent="Today"})})();
 (function(){var chips=[].slice.call(document.querySelectorAll('.chip[href^="#d-"]'));if(!chips.length)return;
@@ -38,6 +38,6 @@ addEventListener("hashchange",fromHash);fromHash();
 var lock=0;chips.forEach(function(c){c.addEventListener("click",function(){lock=Date.now()})});
 if("IntersectionObserver"in window){var io=new IntersectionObserver(function(es){if(Date.now()-lock<900)return;es.forEach(function(x){if(x.isIntersecting)mark(x.target.getAttribute("data-date"))})},{rootMargin:"-45% 0px -50% 0px"});document.querySelectorAll(".day[data-date]").forEach(function(d){io.observe(d)})}})();
 </script>
-<script src="/assets/search.js?v=d720ece4" defer></script>
+<script src="/assets/search.js?v=5d087bd3" defer></script>
 </body>
 </html>

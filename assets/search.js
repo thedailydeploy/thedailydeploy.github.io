@@ -10,7 +10,7 @@
   function load() {
     if (index) return Promise.resolve(index);
     if (!loading) loading = fetch("/data/search.json").then(r => r.json()).then(rows => {
-      index = rows.map(r => ({date: r[0], n: r[1], title: r[2], cat: r[3], outlets: r[4], hay: (r[2] + " " + r[3] + " " + r[4] + " " + r[5]).toLowerCase()}));
+      index = rows.map(r => ({date: r[0], n: r[1], title: r[2], cat: r[3], outlets: r[4], url: r[6] || "", hay: (r[2] + " " + r[3] + " " + r[4] + " " + r[5]).toLowerCase()}));
       return index;
     }).catch(() => { loading = null; return null; });
     return loading;
@@ -25,7 +25,7 @@
     const words = term.split(/\s+/);
     const hits = rows.filter(r => words.every(w => r.hay.includes(w))).slice(0, 40);
     box.innerHTML = hits.length
-      ? hits.map(h => `<a href="/${h.date.replace(/-/g, "/")}/#s-${String(h.n).padStart(2, "0")}"><span class="rd">${fmt(h.date)} · ${esc(h.cat)}</span><span class="rt">${esc(h.title)}</span><span class="ro">${esc(h.outlets)}</span></a>`).join("")
+      ? hits.map(h => `<a href="${h.url ? esc(h.url) : "/" + h.date.replace(/-/g, "/") + "/#s-" + String(h.n).padStart(2, "0")}"><span class="rd">${h.url ? "Explainer · " : fmt(h.date) + " · "}${esc(h.cat)}</span><span class="rt">${esc(h.title)}</span><span class="ro">${esc(h.outlets)}</span></a>`).join("")
       : `<div class="none">No stories match “${esc(q.value.trim())}”. Try one keyword, like an outlet or a place.</div>`;
     box.hidden = false;
   }
